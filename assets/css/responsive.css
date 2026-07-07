@@ -1,0 +1,535 @@
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+/*=========================
+1400px
+=========================*/
+
+@media (max-width:1400px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    .hero h2{
+
+        font-size:82px;
+
+    }
+
+    .section-header h2{
+
+        font-size:64px;
+
+    }
+
+}
+
+/*=========================
+1200px
+=========================*/
+
+@media (max-width:1200px){
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+    }
+
+    .hero-right{
+
+        justify-content:flex-start;
+
+    }
+
+    .floating-card{
+
+        width:100%;
+
+        max-width:520px;
+
+    }
+
+    .history-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .brands-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .collections-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*=========================
+992px
+=========================*/
+
+@media (max-width:992px){
+
+    .header{
+
+        height:90px;
+
+    }
+
+    .navigation{
+
+        display:none;
+
+    }
+
+    .header-button{
+
+        display:none;
+
+    }
+
+    .mobile-toggle{
+
+        display:flex;
+
+    }
+
+    .logo h1{
+
+        font-size:50px;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+
+        padding:180px 0 120px;
+
+    }
+
+    .hero h2{
+
+        font-size:68px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    .section-header h2{
+
+        font-size:56px;
+
+    }
+
+    .history-content h2{
+
+        font-size:58px;
+
+    }
+
+    .atelier-content h2{
+
+        font-size:60px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:56px;
+
+    }
+
+    .contact-info h2{
+
+        font-size:56px;
+
+    }
+
+    .testimonials-slider{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .history-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .atelier-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/*=========================
+768px
+=========================*/
+
+@media (max-width:768px){
+
+    section{
+
+        padding:100px 0;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+        padding-top:160px;
+
+    }
+
+    .hero-left{
+
+        margin:auto;
+
+    }
+
+    .hero-tag{
+
+        justify-content:center;
+
+    }
+
+    .hero-tag::before{
+
+        display:none;
+
+    }
+
+    .hero h2{
+
+        font-size:56px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .floating-card{
+
+        padding:40px;
+
+    }
+
+    .floating-card h3{
+
+        font-size:38px;
+
+    }
+
+    .collections-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .brands-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .contact-form{
+
+        padding:35px;
+
+    }
+
+    .cta-box{
+
+        padding:60px 35px;
+
+    }
+
+    .cta-box h2{
+
+        font-size:46px;
+
+    }
+
+}
+
+
+/*=========================
+576px
+=========================*/
+
+@media (max-width:576px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .header{
+
+        height:80px;
+
+    }
+
+    .logo-small{
+
+        font-size:10px;
+
+        letter-spacing:4px;
+
+    }
+
+    .logo h1{
+
+        font-size:40px;
+
+    }
+
+    .logo-location{
+
+        font-size:11px;
+
+        letter-spacing:3px;
+
+    }
+
+    .logo-year{
+
+        font-size:10px;
+
+        letter-spacing:3px;
+
+    }
+
+    .hero{
+
+        padding-top:140px;
+
+    }
+
+    .hero h2{
+
+        font-size:44px;
+
+        line-height:1;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    .btn-gold,
+
+    .btn-outline{
+
+        width:100%;
+
+        padding:18px 24px;
+
+    }
+
+    .section-header h2{
+
+        font-size:40px;
+
+    }
+
+    .history-content h2,
+
+    .atelier-content h2,
+
+    .contact-info h2,
+
+    .cta-box h2{
+
+        font-size:42px;
+
+    }
+
+    .collection-card img{
+
+        height:460px;
+
+    }
+
+    .history-image img{
+
+        height:520px;
+
+    }
+
+    .floating-card{
+
+        padding:30px;
+
+    }
+
+    .contact-form{
+
+        padding:28px;
+
+    }
+
+    .brand-item{
+
+        height:120px;
+
+    }
+
+    .brand-item img{
+
+        max-width:120px;
+
+    }
+
+    .whatsapp-button{
+
+        width:56px;
+
+        height:56px;
+
+        right:18px;
+
+        bottom:18px;
+
+    }
+
+    #backToTop{
+
+        width:50px;
+
+        height:50px;
+
+        right:20px;
+
+        bottom:90px;
+
+    }
+
+}
+
+/*=========================
+380px
+=========================*/
+
+@media (max-width:380px){
+
+    .hero h2{
+
+        font-size:36px;
+
+    }
+
+    .section-header h2{
+
+        font-size:34px;
+
+    }
+
+    .history-content h2,
+
+    .atelier-content h2,
+
+    .contact-info h2,
+
+    .cta-box h2{
+
+        font-size:36px;
+
+    }
+
+    .floating-card h3{
+
+        font-size:30px;
+
+    }
+
+    .service-card{
+
+        padding:35px 25px;
+
+    }
+
+    .testimonial-card{
+
+        padding:35px 25px;
+
+    }
+
+}
+
+
+
+

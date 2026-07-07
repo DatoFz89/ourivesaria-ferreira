@@ -1,0 +1,634 @@
+/*==================================================
+ANIMATIONS
+==================================================*/
+
+/*=========================
+FADE UP
+=========================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(70px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    opacity:0;
+
+    animation:fadeUp 1s ease forwards;
+
+}
+
+/*=========================
+FADE LEFT
+=========================*/
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-left{
+
+    opacity:0;
+
+    animation:fadeLeft 1s ease forwards;
+
+}
+
+/*=========================
+FADE RIGHT
+=========================*/
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-right{
+
+    opacity:0;
+
+    animation:fadeRight 1s ease forwards;
+
+}
+
+/*=========================
+ZOOM
+=========================*/
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom-in{
+
+    opacity:0;
+
+    animation:zoomIn .9s ease forwards;
+
+}
+
+/*=========================
+FLOAT
+=========================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.floating-card{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+/*=========================
+SCROLL INDICATOR
+=========================*/
+
+@keyframes scrollMove{
+
+    0%{
+
+        opacity:0;
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translate(-50%,22px);
+
+    }
+
+}
+
+.scroll-indicator span{
+
+    animation:scrollMove 2s infinite;
+
+}
+
+/*==================================================
+REVEAL
+==================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:1s cubic-bezier(.22,1,.36,1);
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*==================================================
+IMAGE PARALLAX
+==================================================*/
+
+.parallax{
+
+    overflow:hidden;
+
+}
+
+.parallax img{
+
+    transition:transform .25s linear;
+
+    will-change:transform;
+
+}
+
+/*==================================================
+SHINE
+==================================================*/
+
+@keyframes shine{
+
+    0%{
+
+        left:-140%;
+
+    }
+
+    100%{
+
+        left:140%;
+
+    }
+
+}
+
+.collection-card::before,
+
+.service-card::after{
+
+    animation:none;
+
+}
+
+.collection-card:hover::before,
+
+.service-card:hover::after{
+
+    animation:shine 1.2s forwards;
+
+}
+
+/*==================================================
+BUTTON PULSE
+==================================================*/
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(201,166,107,.45);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 20px rgba(201,166,107,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(201,166,107,0);
+
+    }
+
+}
+
+.btn-gold:hover{
+
+    animation:pulse 1.2s;
+
+}
+
+/*==================================================
+ROTATE
+==================================================*/
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.hero-light::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(201,166,107,.08);
+
+    top:-250px;
+
+    right:-250px;
+
+    animation:rotateSlow 40s linear infinite;
+
+}
+
+/*==================================================
+LOADER
+==================================================*/
+
+@keyframes loaderFade{
+
+    from{
+
+        opacity:1;
+
+    }
+
+    to{
+
+        opacity:0;
+
+        visibility:hidden;
+
+    }
+
+}
+
+#loader.loaded{
+
+    animation:loaderFade .8s forwards;
+
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+@keyframes textReveal{
+
+    from{
+
+        opacity:0;
+
+        letter-spacing:18px;
+
+    }
+
+    to{
+
+        opacity:1;
+
+        letter-spacing:6px;
+
+    }
+
+}
+
+.hero-tag,
+
+.section-tag{
+
+    animation:textReveal 1.2s ease;
+
+}
+
+/*==================================================
+HERO TITLE
+==================================================*/
+
+@keyframes heroTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero h2{
+
+    animation:heroTitle 1.2s ease;
+
+}
+
+/*==================================================
+HERO TEXT
+==================================================*/
+
+@keyframes heroText{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero p,
+
+.hero-buttons{
+
+    animation:heroText 1.5s ease;
+
+}
+
+
+/*==================================================
+MENU
+==================================================*/
+
+@keyframes menuFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.mobile-menu.active{
+
+    animation:menuFade .45s ease forwards;
+
+}
+
+/*==================================================
+CURSOR
+==================================================*/
+
+
+
+/*==================================================
+BACK TO TOP
+==================================================*/
+
+@keyframes backTop{
+
+    from{
+
+        transform:translateY(30px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+#backToTop.show{
+
+    animation:backTop .4s ease;
+
+}
+
+/*==================================================
+WHATSAPP
+==================================================*/
+
+@keyframes whatsappFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.whatsapp-button{
+
+    animation:whatsappFloat 3s ease-in-out infinite;
+
+}
+
+/*==================================================
+DELAYS
+==================================================*/
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+.delay-5{
+
+    animation-delay:1s;
+
+}
+
+.delay-6{
+
+    animation-delay:1.2s;
+
+}
+
+/*==================================================
+PERFORMANCE
+==================================================*/
+
+.reveal,
+
+.collection-card,
+
+.service-card,
+
+.brand-item,
+
+.testimonial-card,
+
+.floating-card{
+
+    will-change:transform,opacity;
+
+    backface-visibility:hidden;
+
+}
+
+
