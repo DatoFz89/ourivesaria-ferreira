@@ -2531,7 +2531,7 @@ WHATSAPP
 
     color:#C8A56A;
 
-    font-size:32px;
+    font-size:30px;
 
     text-decoration:none;
 
@@ -2592,7 +2592,7 @@ BACK TO TOP
 
     right:30px;
 
-    bottom:108px;
+    bottom:115px;
 
     width:60px;
 
@@ -2625,7 +2625,7 @@ BACK TO TOP
     box-shadow:
         0 0 0 1px rgba(200,165,106,.25),
         0 12px 35px rgba(0,0,0,.35),
-        0 0 18px rgba(200,165,106,.18);
+        0 0 12px rgba(200,165,106,.12);
 
     z-index:998;
 
