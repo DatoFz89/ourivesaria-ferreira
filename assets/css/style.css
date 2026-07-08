@@ -2513,15 +2513,9 @@ WHATSAPP
 
     bottom:30px;
 
-    width:64px;
+    width:60px;
 
-    height:64px;
-
-    border-radius:50%;
-
-    background:#25D366;
-
-    color:#fff;
+    height:60px;
 
     display:flex;
 
@@ -2529,13 +2523,56 @@ WHATSAPP
 
     justify-content:center;
 
-    font-size:28px;
+    border-radius:50%;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    background:#111;
+
+    border:2px solid #C8A56A;
+
+    color:#C8A56A;
+
+    font-size:32px;
+
+    text-decoration:none;
+
+    box-shadow:
+        0 0 0 1px rgba(200,165,106,.25),
+        0 12px 35px rgba(0,0,0,.35),
+        0 0 18px rgba(200,165,106,.18);
+
+    transition:all .35s ease;
 
     z-index:999;
 
-    transition:.35s;
+}
+
+.whatsapp-button:hover{
+
+    background:#25D366;
+
+    border-color:#25D366;
+
+    color:#fff;
+
+    transform:translateY(-4px) scale(1.08);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,.45),
+        0 0 25px rgba(37,211,102,.35);
+
+}
+
+.whatsapp-button:hover{
+
+    background:#25D366;
+
+    border-color:#25D366;
+
+    color:#ffffff;
+
+    transform:translateY(-4px) scale(1.08);
+
+    box-shadow:0 22px 45px rgba(0,0,0,.45);
 
 }
 
@@ -2555,23 +2592,25 @@ BACK TO TOP
 
     right:30px;
 
-    bottom:110px;
+    bottom:108px;
 
-    width:58px;
+    width:60px;
 
-    height:58px;
-
-    border-radius:50%;
-
-    background:var(--gold);
-
-    color:#111;
+    height:60px;
 
     display:flex;
 
+    align-items:center;
+
     justify-content:center;
 
-    align-items:center;
+    border-radius:50%;
+
+    background:#111;
+
+    border:2px solid #C8A56A;
+
+    color:#C8A56A;
 
     cursor:pointer;
 
@@ -2579,7 +2618,14 @@ BACK TO TOP
 
     visibility:hidden;
 
-    transition:.35s;
+    text-decoration:none;
+
+    transition:all .35s ease;
+
+    box-shadow:
+        0 0 0 1px rgba(200,165,106,.25),
+        0 12px 35px rgba(0,0,0,.35),
+        0 0 18px rgba(200,165,106,.18);
 
     z-index:998;
 
@@ -2595,12 +2641,19 @@ BACK TO TOP
 
 #backToTop:hover{
 
-    transform:translateY(-4px);
+    background:var(--gold);
 
-    background:var(--gold-light);
+    border-color:var(--gold);
+
+    color:#111;
+
+    transform:translateY(-4px) scale(1.08);
+
+    box-shadow:
+        0 22px 45px rgba(0,0,0,.45),
+        0 0 25px rgba(200,165,106,.35);
 
 }
-
 /*==================================================
 PRELOAD
 ==================================================*/
