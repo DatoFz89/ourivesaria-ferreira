@@ -600,14 +600,22 @@ HERO
 
 }
 
-.hero-video img{
+.hero-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 50%; /* Desktop: centrado, sem rua */
+    filter: brightness(1.10) contrast(1.02);
+}
 
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center 15%;
-    filter:brightness(1.10) contrast(1.02);
-
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh; /* Hero mais curto no mobile */
+  }
+  
+  .hero-video img {
+    object-position: center 10%; /* Mobile: sobe para centrar "OURIVESARIA FERREIRA" */
+  }
 }
 
 .hero-overlay{
