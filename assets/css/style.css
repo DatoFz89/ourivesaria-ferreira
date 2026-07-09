@@ -601,26 +601,17 @@ HERO
 }
 
 .hero-video img{
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-	object-position:center top;
-
-    transform:scale(1.05);
-
+    object-position:center center;
+    filter:brightness(1.18) contrast(1.05);
 }
 
 .hero-overlay{
-
     position:absolute;
-
     inset:0;
-
-    background:rgba(0,0,0,.35);
-
+    background:rgba(0,0,0,.28);
 }
 
 .hero-light{
