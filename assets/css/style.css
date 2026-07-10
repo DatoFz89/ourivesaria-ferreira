@@ -604,7 +604,7 @@ HERO
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 50%;
+    object-position: center 50%; /* Desktop fica centrado */
     filter: brightness(0.85) contrast(1.05);
 }
 
@@ -614,7 +614,7 @@ HERO
   }
   
   .hero-video img {
-    object-position: center 25%;
+    object-position: center 10%; /* Mobile: sobe a imagem para mostrar o topo/toldo */
   }
 }
 
