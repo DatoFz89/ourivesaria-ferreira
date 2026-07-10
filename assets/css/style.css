@@ -614,7 +614,7 @@ HERO
   }
   
   .hero-video img {
-    object-position: center 10%; /* Mobile: sobe a imagem para mostrar o topo/toldo */
+    object-position: center 70%; /* Mobile: sobe a imagem para mostrar o topo/toldo */
   }
 }
 
