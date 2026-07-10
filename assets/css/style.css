@@ -605,16 +605,16 @@ HERO
     height: 100%;
     object-fit: cover;
     object-position: center 50%;
-    filter: brightness(1.10) contrast(1.02);
+    filter: brightness(0.85) contrast(1.05);
 }
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
+    min-height: 65vh;
   }
   
   .hero-video img {
-    object-position: center 10%;
+    object-position: center 25%;
   }
 }
 
