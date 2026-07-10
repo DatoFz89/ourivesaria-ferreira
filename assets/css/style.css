@@ -604,7 +604,7 @@ HERO
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 50%; /* Desktop fica centrado */
+    object-position: center 50%;
     filter: brightness(0.85) contrast(1.05);
 }
 
@@ -614,7 +614,11 @@ HERO
   }
   
   .hero-video img {
-    object-position: center 70%; /* Mobile: sobe a imagem para mostrar o topo/toldo */
+    object-position: center 75%; /* Desce para mostrar mais montra */
+  }
+
+  .hero-tag {
+    display: none !important; /* Remove o DESDE 1967 só na mobile */
   }
 }
 
