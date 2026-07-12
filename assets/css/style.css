@@ -786,7 +786,7 @@ FLOATING CARD
 
     border-radius:28px;
 
-    background:rgba(18,18,18,.72);
+    background:rgba(18,18,18,.50); /* 50% opaco = 50% transparente */
 
     backdrop-filter:blur(22px);
 
