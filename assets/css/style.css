@@ -575,21 +575,13 @@ HERO
 ==================================================*/
 
 .hero{
-
     position:relative;
-
     min-height:85vh;
-
     display:flex;
-
     align-items:center;
-
     overflow:hidden;
-
     padding-top:95px;
-
-    background:#050505;
-
+    background:transparent; /* ← muda de #050505 para transparent */
 }
 
 .hero-video{
@@ -779,8 +771,8 @@ FLOATING CARD
     width:420px;
     padding:50px;
     border-radius:28px;
-    background:rgba(18,18,18,.08) !important; /* 92% transparente - quase só blur */
-    backdrop-filter:blur(45px) !important;
+    background:rgba(18,18,18,.12) !important; /* 88% transparente */
+    backdrop-filter:blur(40px) !important;
     border:1px solid rgba(200,165,106,.25);
     box-shadow:0 30px 80px rgba(0,0,0,.45);
     transition:.45s ease;
