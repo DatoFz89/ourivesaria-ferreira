@@ -623,21 +623,18 @@ HERO
 }
 
 .hero-overlay{
-    position:absolute;
-    inset:0;
     background:
         linear-gradient(
             90deg,
             rgba(5,5,5,.45) 0%,
-            rgba(5,5,5,.20) 45%,
-            rgba(5,5,5,.08) 100%
+            rgba(5,5,5,.15) 45%,
+            rgba(5,5,5,0) 100%      /* ← muda de .08 para 0 = transparente total à direita */
         ),
         radial-gradient(
             circle at 70% 30%,
-            rgba(212,175,55,.08),
+            rgba(212,175,55,.12),   /* ← sobe para .12 para realçar o dourado */
             transparent 45%
         );
-    z-index:1;
 }
 
 .hero-light{
@@ -782,9 +779,9 @@ FLOATING CARD
     width:420px;
     padding:50px;
     border-radius:28px;
-    background:rgba(18,18,18,.20) !important; /* ← força isto */
-    backdrop-filter:blur(35px) !important;
-    border:1px solid rgba(200,165,106,.18);
+    background:rgba(18,18,18,.08) !important; /* 92% transparente - quase só blur */
+    backdrop-filter:blur(45px) !important;
+    border:1px solid rgba(200,165,106,.25);
     box-shadow:0 30px 80px rgba(0,0,0,.45);
     transition:.45s ease;
 }
