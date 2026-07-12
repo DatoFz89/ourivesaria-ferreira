@@ -396,17 +396,11 @@ LOGO
 }
 
 .logo-year{
-
-    margin-top:4px;
-
+    margin-top:12px; /* ← era 4px, sobe para 12px ou 16px */
     font-size:11px;
-
     letter-spacing:6px;
-
     color:var(--gold);
-
     text-transform:uppercase;
-
 }
 
 /*==================================================
