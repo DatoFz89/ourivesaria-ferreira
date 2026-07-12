@@ -614,7 +614,7 @@ HERO
   }
   
   .hero-video img {
-    object-position: center 75%; /* Desce para mostrar mais montra */
+    object-position: center 85%; /* Desce para mostrar mais montra */
   }
 
   .hero-tag {
