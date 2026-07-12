@@ -382,17 +382,11 @@ LOGO
 }
 
 .logo-location{
-
-    margin-top:10px;
-
+    margin-top:16px; /* ← era 10px */
     font-size:13px;
-
     letter-spacing:5px;
-
     text-transform:uppercase;
-
     color:#E8E8E8;
-
 }
 
 .logo-year{
