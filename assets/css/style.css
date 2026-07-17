@@ -591,17 +591,48 @@ HERO
 }
 
 @media (max-width: 768px) {
-  .hero {
-    min-height: 65vh;
-  }
-  
-  .hero-video img {
-    object-position: center 85%; /* Desce para mostrar mais montra */
-  }
+    .hero{
+        min-height: 520px !important;
+        padding-top: 95px;
+        align-items: flex-start;
+    }
 
-  .hero-tag {
-    display: none !important; /* Remove o DESDE 1967 só na mobile */
-  }
+    .hero-video{
+        height: 55% !important;
+        min-height: 320px;
+    }
+
+    .hero-video img{
+        object-fit: cover !important;
+        object-position: center 15% !important;
+        filter: brightness(0.90) contrast(1.05);
+    }
+
+    .hero-overlay{
+        height: 55% !important;
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(5,5,5,.10) 0%,
+                rgba(5,5,5,.40) 100%
+            ) !important;
+    }
+
+    .hero-container{
+        padding-top: 340px !important;
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+        text-align: left !important;
+    }
+
+    .hero-left h2{
+        font-size: 42px !important;
+        line-height: .95 !important;
+    }
+
+    .hero-right{
+        display: none !important;
+    }
 }
 
 .hero-overlay{
