@@ -447,11 +447,11 @@ FIX FINAL HERO MOBILE - JA CORRIGIDO
         overflow:hidden !important;
     }
     .hero-video img{
-        width:100% !important;
-        height:100% !important;
-        object-fit:cover !important;
-        object-position:center 28% !important;
-    }
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center top !important;
+}
     .hero-overlay,
     .hero-light{
         height:430px !important;
