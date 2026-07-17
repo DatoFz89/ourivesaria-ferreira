@@ -2694,7 +2694,41 @@ RESPONSIVE - TABLET
 RESPONSIVE - MOBILE
 ==================================================*/
 
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
 @media (max-width:768px){
+
+    .logo-small{
+
+        font-size:10px;
+
+        letter-spacing:4px;
+
+    }
+
+    .logo h1{
+
+        font-size:36px;
+
+    }
+
+    .logo-location{
+
+        font-size:11px;
+
+        letter-spacing:3px;
+
+    }
+
+    .logo-year{
+
+        font-size:10px;
+
+        letter-spacing:3px;
+
+    }
 
     section{
 
@@ -2820,7 +2854,6 @@ RESPONSIVE - MOBILE
     }
 
 }
-
 
 /*==================================================
 RESPONSIVE - SMALL MOBILE
