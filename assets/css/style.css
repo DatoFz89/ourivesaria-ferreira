@@ -2701,92 +2701,61 @@ RESPONSIVE - MOBILE
 @media (max-width:768px){
 
     .logo-small{
-
         font-size:10px;
-
         letter-spacing:4px;
-
     }
 
     .logo h1{
-
         font-size:36px;
-
     }
 
     .logo-location{
-
         font-size:11px;
-
         letter-spacing:3px;
-
     }
 
     .logo-year{
-
         font-size:10px;
-
         letter-spacing:3px;
-
     }
 
     section{
-
         padding:90px 0;
-
     }
 
     .container{
-
         width:92%;
-
     }
 
     .hero{
-
         padding-top:120px;
-
         min-height:auto;
-
     }
 
     .hero-video img{
-
+        object-fit:contain;
         object-position:top center;
-
         transform:none;
-
     }
 
     .hero h2{
-
         font-size:54px;
-
     }
 
     .hero p{
-
         font-size:16px;
-
         line-height:1.8;
-
     }
 
     .hero-buttons{
-
         flex-direction:column;
-
         align-items:center;
-
     }
 
     .btn-gold,
     .btn-outline{
-
         width:100%;
-
         max-width:320px;
-
     }
 
     .collections-grid,
@@ -2794,63 +2763,43 @@ RESPONSIVE - MOBILE
     .testimonials-slider,
     .footer-grid,
     .history-stats{
-
         grid-template-columns:1fr;
-
     }
 
     .history-content h2{
-
         font-size:48px;
-
     }
 
     .contact-info h2{
-
         font-size:48px;
-
     }
 
     .section-header h2{
-
         font-size:50px;
-
     }
 
     .floating-card{
-
         padding:35px;
-
     }
 
     .contact-form{
-
         padding:35px;
-
     }
 
     .testimonial-card{
-
         padding:35px;
-
     }
 
     .service-card{
-
         padding:35px;
-
     }
 
     .collection-card img{
-
         height:380px;
-
     }
 
     .map iframe{
-
         height:420px;
-
     }
 
 }
