@@ -430,33 +430,31 @@ RESPONSIVE
 FIX FINAL HERO MOBILE - JA CORRIGIDO
 ==================================================*/
 @media (max-width: 768px) {
-    .hero{
-        display:block !important;
-        min-height:auto !important;
-        height:auto !important;
-        padding-top:85px !important;
-        padding-bottom:35px !important;
-        background:#050505 !important;
-    }
-    .hero-video{
-        position:relative !important;
-        width:100% !important;
-        height:430px !important;
-        min-height:430px !important;
-        max-height:430px !important;
-        overflow:hidden !important;
-    }
-    .hero-video img{
+  .hero{
+    padding-top:95px !important;
+    min-height:0 !important;
+    background:#050505 !important;
+  }
+  .hero-video{
+    position:relative !important;
     width:100% !important;
-    height:100% !important;
-    object-fit:cover !important;
+    height:auto !important;
+    min-height:0 !important;
+    top:0 !important;
+  }
+  .hero-video picture,
+  .hero-video img{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    object-fit:contain !important;
     object-position:center top !important;
+  }
+  .hero-overlay,
+  .hero-light{
+    display:none !important;
+  }
 }
-    .hero-overlay,
-    .hero-light{
-        height:430px !important;
-        top:85px !important;
-    }
     .hero-container{
         padding-top:28px !important;
         display:block !important;
