@@ -501,62 +501,55 @@ RESPONSIVE MOBILE GERAL
 }
 
 /*==================================================
-FIX FINAL - HERO MOBILE - TEM DE FICAR NO FIM
+FIX FINAL - HERO MOBILE - VERSÃO CORRIGIDA
 ==================================================*/
 @media (max-width: 768px) {
-    .hero, .hero-video img, .hero-overlay, .hero-light{
-        transition: none !important;
-        transform: none !important;
-        animation: none !important;
+    .hero-tag{
+        display: none !important;
     }
+
     .hero{
+        display: block !important;
         min-height: auto !important;
         height: auto !important;
         padding-top: 85px !important;
-        align-items: flex-start !important;
+        padding-bottom: 30px !important;
         background: #050505 !important;
     }
+
     .hero-video{
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
+        position: relative !important;
         width: 100% !important;
-        height: 280px !important;
-        min-height: 280px !important;
-        max-height: 280px !important;
-        pointer-events: none !important;
+        height: 380px !important;
+        min-height: 380px !important;
+        max-height: 380px !important;
+        overflow: hidden !important;
     }
+
     .hero-video img{
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
-        object-position: center 20% !important;
-        filter: brightness(0.88) contrast(1.05) !important;
+        object-position: center 18% !important;
     }
-    .hero-overlay{
-        top: 0 !important;
-        height: 280px !important;
-        min-height: 280px !important;
-        max-height: 280px !important;
-        background: linear-gradient(to bottom, rgba(5,5,5,.05) 0%, rgba(5,5,5,.50) 100%) !important;
-        pointer-events: none !important;
-    }
+
+    .hero-overlay,
     .hero-light{
-        height: 280px !important;
-        pointer-events: none !important;
+        height: 380px !important;
+        top: 85px !important;
     }
+
     .hero-container{
-        position: relative !important;
-        z-index: 3 !important;
-        padding-top: 310px !important;
-        padding-bottom: 40px !important;
-        grid-template-columns: 1fr !important;
-        gap: 0 !important;
+        padding-top: 28px !important;
+        padding-bottom: 20px !important;
+        display: block !important;
     }
+
     .hero-left h2{
-        font-size: 36px !important;
-        line-height: .95 !important;
+        font-size: 32px !important;
+        line-height: 1.1 !important;
     }
+
     .hero-right{
         display: none !important;
     }
