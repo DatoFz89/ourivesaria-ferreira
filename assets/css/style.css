@@ -1,6 +1,7 @@
 /*==================================================
 OURIVESARIA FERREIRA
 STYLE.CSS - FINAL UNICO - SEM PRECISAR DE MAIS NADA
+CORRIGIDO: DESKTOP COVER + MOBILE CONTAIN
 ==================================================*/
 
 /*=========================
@@ -270,9 +271,9 @@ section{
 }
 .hero-video img{
     width:100% !important;
-    height:auto !important;
-    object-fit:contain !important;
-    object-position:top center !important;
+    height:100% !important;
+    object-fit:cover !important;
+    object-position:center center !important;
 }
 .hero-overlay{
     position:absolute;
@@ -426,7 +427,7 @@ RESPONSIVE
 }
 
 /*==================================================
-FIX FINAL HERO MOBILE - JA CORRIGIDO
+FIX FINAL HERO MOBILE - CORRIGIDO SEM AFETAR DESKTOP
 ==================================================*/
 @media (max-width: 768px) {
   .hero{
@@ -453,19 +454,18 @@ FIX FINAL HERO MOBILE - JA CORRIGIDO
   .hero-light{
     display:none !important;
   }
-}
-    .hero-container{
-        padding-top:28px !important;
-        display:block !important;
-    }
-    .hero-tag{
-        display:none !important;
-    }
-    .hero-left h2{
-        font-size:32px !important;
-        line-height:1.05 !important;
-    }
-    .hero-right{
-        display:none !important;
-    }
+  .hero-container{
+    padding-top:28px !important;
+    display:block !important;
+  }
+  .hero-tag{
+    display:none !important;
+  }
+  .hero-left h2{
+    font-size:32px !important;
+    line-height:1.05 !important;
+  }
+  .hero-right{
+    display:none !important;
+  }
 }
