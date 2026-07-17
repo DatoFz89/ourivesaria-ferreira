@@ -748,14 +748,6 @@ HERO
 FLOATING CARD
 ==================================================*/
 
-.hero-right{
-
-    display:flex;
-
-    justify-content:flex-end;
-
-}
-
 .floating-card{
 
     width:420px;
@@ -883,42 +875,6 @@ COLEÇÕES
     grid-template-columns:repeat(3,1fr);
 
     gap:35px;
-
-}
-
-/* ===============================
-COLLECTION (NOVO PREMIUM)
-================================ */
-
-.collection{
-
-    position:relative;
-
-    border-radius:26px;
-
-    overflow:hidden;
-
-    background:#111;
-
-    transition:.5s ease;
-
-}
-
-.collection img{
-
-    width:100%;
-
-    height:480px;
-
-    object-fit:cover;
-
-    transition:.7s ease;
-
-}
-
-.collection:hover img{
-
-    transform:scale(1.06);
 
 }
 
@@ -1167,7 +1123,7 @@ IMAGEM
 
     overflow:hidden;
 
-    border-radius:28px;
+    border-radius:26px;
 
     box-shadow:0 30px 80px rgba(0,0,0,.35);
 
@@ -1181,29 +1137,7 @@ IMAGEM
 
     object-fit:cover;
 
-    transition:1.2s;
-
-}
-
-.history-image{
-
-    position:relative;
-
-    overflow:hidden;
-
-    border-radius:26px;
-
-}
-
-.history-image img{
-
     transition:transform .8s ease;
-
-}
-
-.history-image:hover img{
-
-    transform:scale(1.05);
 
 }
 
@@ -1424,6 +1358,8 @@ CONTENT
 
 .atelier-content{
 
+    position:relative;
+
     max-width:720px;
 
 }
@@ -1625,40 +1561,15 @@ SERVICE CARD
 
     margin-bottom:28px;
 
+    transition:.35s ease;
+
 }
 
 .service-card:hover .service-icon{
 
     transform:rotate(-8deg) scale(1.08);
 
-    background:var(--gold);
-
-    color:#111;
-
 }
-
-.service-card h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:30px;
-
-    margin-bottom:18px;
-
-}
-
-.service-card p{
-
-    color:#CFCFCF;
-
-    line-height:1.9;
-
-}
-
-
-/*==================================================
-TEXTOS
-==================================================*/
 
 .service-card h3{
 
@@ -2308,18 +2219,6 @@ FOOTER
 
 }
 
-.footer h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:32px;
-
-    margin-bottom:25px;
-
-    color:#fff;
-
-}
-
 .footer p{
 
     color:#BEBEBE;
@@ -2607,44 +2506,32 @@ PRELOAD
 
 .preload-images{
 
+    position:absolute;
+
+    width:1px;
+
+    height:1px;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+MOBILE MENU (dropdown fed by app.js)
+==================================================*/
+
+.mobile-menu{
+
     display:none;
 
 }
 
 /*==================================================
-SELECTION
-==================================================*/
-
-::selection{
-
-    background:var(--gold);
-
-    color:#111;
-
-}
-
-/*==================================================
-FINAL
-==================================================*/
-
-
-body.loaded{
-
-    opacity:1;
-
-}
-
-body{
-
-    opacity:0;
-
-    transition:opacity .5s ease;
-
-}
-
-
-/*==================================================
-PREMIUM POLISH
+FINAL / SELECTION / FOCUS
 ==================================================*/
 
 ::selection{
@@ -2671,6 +2558,20 @@ img{
 
 }
 
+body{
+
+    opacity:0;
+
+    transition:opacity .5s ease;
+
+}
+
+body.loaded{
+
+    opacity:1;
+
+}
+
 .section-tag{
 
     position:relative;
@@ -2693,7 +2594,7 @@ img{
 
 }
 
-.collection,
+.collection-card,
 .service-card,
 .testimonial-card,
 .contact-item,
@@ -2815,6 +2716,12 @@ RESPONSIVE - MOBILE
 
     }
 
+    .hero-video img{
+
+        object-position:top center;
+
+    }
+
     .hero h2{
 
         font-size:54px;
@@ -2898,7 +2805,7 @@ RESPONSIVE - MOBILE
 
     }
 
-    .collection img{
+    .collection-card img{
 
         height:380px;
 
@@ -2987,7 +2894,7 @@ RESPONSIVE - SMALL MOBILE
 
     }
 
-    .collection img{
+    .collection-card img{
 
         height:300px;
 
@@ -3007,7 +2914,7 @@ RESPONSIVE - SMALL MOBILE
 
 
 /*==================================================
-MOBILE MENU
+MOBILE MENU TOGGLE (header nav)
 ==================================================*/
 
 @media (max-width:992px){
@@ -3063,24 +2970,24 @@ MOBILE MENU
         display:flex;
 
     }
-	
-	.mobile-toggle.active span:nth-child(1){
 
-    transform:translateY(8px) rotate(45deg);
+    .mobile-toggle.active span:nth-child(1){
 
-}
+        transform:translateY(8px) rotate(45deg);
 
-.mobile-toggle.active span:nth-child(2){
+    }
 
-    opacity:0;
+    .mobile-toggle.active span:nth-child(2){
 
-}
+        opacity:0;
 
-.mobile-toggle.active span:nth-child(3){
+    }
 
-    transform:translateY(-8px) rotate(-45deg);
+    .mobile-toggle.active span:nth-child(3){
 
-}
+        transform:translateY(-8px) rotate(-45deg);
+
+    }
 
     .header-button{
 
@@ -3089,57 +2996,3 @@ MOBILE MENU
     }
 
 }
-    .nav.active{
-
-        transform:translateY(0);
-
-        opacity:1;
-
-        visibility:visible;
-
-    }
-
-    .nav ul{
-
-        flex-direction:column;
-
-        gap:20px;
-
-    }
-
-    .nav li{
-
-        width:100%;
-
-        text-align:center;
-
-    }
-
-    .hamburger{
-
-    display:none;
-
-    align-items:center;
-
-    justify-content:center;
-
-    width:52px;
-
-    height:52px;
-
-    border:1px solid rgba(200,165,106,.18);
-
-    border-radius:50%;
-
-    cursor:pointer;
-
-    transition:.35s ease;
-
-}
-
-.hamburger:hover{
-
-    border-color:var(--gold);
-
-}
-	
