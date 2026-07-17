@@ -2720,6 +2720,8 @@ RESPONSIVE - MOBILE
 
         object-position:top center;
 
+        transform:none;
+
     }
 
     .hero h2{
