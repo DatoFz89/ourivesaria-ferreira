@@ -2738,6 +2738,14 @@ RESPONSIVE - MOBILE
         transform:none;
     }
 
+    .hero-light{
+
+    background:
+    radial-gradient(circle at 75% 30%,rgba(201,166,107,.18),transparent 35%),
+    rgba(5,5,5,.15);
+
+    }
+
     .hero h2{
         font-size:54px;
     }
