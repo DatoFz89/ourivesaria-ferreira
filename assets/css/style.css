@@ -756,15 +756,15 @@ FLOATING CARD
 
     border-radius:28px;
 
-    background:rgba(18,18,18,.15);
+    background:rgba(18,18,18,.04);
 
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(2px);
 
-    -webkit-backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(2px);
 
-    border:1px solid rgba(200,165,106,.28);
+    border:1px solid rgba(200,165,106,.35);
 
-    box-shadow:0 30px 80px rgba(0,0,0,.45);
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
 
     transition:background .45s ease, box-shadow .45s ease, border-color .45s ease, transform .45s ease;
 
@@ -825,6 +825,8 @@ FLOATING CARD
 
     margin:22px 0;
 
+    text-shadow:0 2px 12px rgba(0,0,0,.75);
+
 }
 
 .floating-card p{
@@ -834,6 +836,8 @@ FLOATING CARD
     line-height:1.9;
 
     font-size:17px;
+
+    text-shadow:0 2px 12px rgba(0,0,0,.75);
 
 }
 
