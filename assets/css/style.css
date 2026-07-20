@@ -630,7 +630,7 @@ HERO
 
     background:
     radial-gradient(circle at 75% 30%,rgba(201,166,107,.18),transparent 35%),
-    linear-gradient(90deg,#050505 3%,rgba(5,5,5,.52) 38%,rgba(5,5,5,.15) 100%);
+    linear-gradient(90deg,rgba(5,5,5,.38) 0%,rgba(5,5,5,.30) 38%,rgba(5,5,5,.10) 100%);
 
 }
 
