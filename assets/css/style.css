@@ -312,9 +312,11 @@ HEADER
     box-shadow .35s ease,
     transform .35s ease;
 
-    background:rgba(201,166,107,.95);
-    border:2px solid rgba(255,255,255,.15);
+    background:rgba(8,8,8,.18);
+
     backdrop-filter:blur(8px);
+
+}
 
 .header.scrolled{
 
@@ -727,11 +729,9 @@ HERO
 
     color:#ECECEC;
 
-    text-shadow:
-        0 2px 8px rgba(0,0,0,.60),
-        0 0 18px rgba(0,0,0,.35);
+    text-shadow:0 2px 8px rgba(0,0,0,.55);
 
-    }
+}
 
 
 .hero-buttons{
@@ -2442,19 +2442,19 @@ WHATSAPP
 
     position:fixed;
 
-    right:25px;
+    right:30px;
 
-    bottom:25px;
+    bottom:30px;
 
-    width:60px;
+    width:64px;
 
-    height:60px;
+    height:64px;
 
     border-radius:50%;
 
-    background:var(--gold);
+    background:#25D366;
 
-    color:#111;
+    color:#fff;
 
     display:flex;
 
@@ -2462,37 +2462,19 @@ WHATSAPP
 
     justify-content:center;
 
-    text-decoration:none;
+    font-size:28px;
 
-    font-size:0;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 
     z-index:999;
 
-    transition:all .35s ease;
-
-}
-
-.whatsapp-button::before{
-
-    content:"";
-
-    width:32px;
-
-    height:32px;
-
-    background:url("../images/icons/whatsapp.svg") center center / contain no-repeat;
+    transition:.35s;
 
 }
 
 .whatsapp-button:hover{
 
-    transform:translateY(-3px) scale(1.06);
-
-    box-shadow:0 18px 40px rgba(0,0,0,.45);
-
-    background:#d9b46a;
+    transform:scale(1.08);
 
 }
 
@@ -2818,7 +2800,7 @@ RESPONSIVE - MOBILE
         0 3px 8px rgba(0,0,0,.95),
         0 0 18px rgba(0,0,0,.60);
 
-    }
+}
 
     .hero-buttons{
         flex-direction:column;
