@@ -2504,25 +2504,25 @@ BACK TO TOP
 
     position:fixed;
 
-    right:30px;
+    right:25px;
 
     bottom:110px;
 
-    width:58px;
+    width:70px;
 
-    height:58px;
-
-    border-radius:50%;
-
-    background:var(--gold);
-
-    color:#111;
+    height:70px;
 
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    background:transparent;
+
+    border:none;
+
+    padding:0;
 
     cursor:pointer;
 
@@ -2548,7 +2548,25 @@ BACK TO TOP
 
     transform:translateY(-4px);
 
-    background:var(--gold-light);
+}
+
+.back-to-top-icon{
+
+    width:70px;
+
+    height:70px;
+
+    display:block;
+
+    transition:transform .3s ease;
+
+    filter:drop-shadow(0 6px 12px rgba(0,0,0,.45));
+
+}
+
+#backToTop:hover .back-to-top-icon{
+
+    transform:scale(1.08);
 
 }
 
