@@ -512,15 +512,17 @@ RESPONSIVE
 
     #backToTop{
 
-        width:50px;
+    width:70px;
 
-        height:50px;
+    height:70px;
 
-        right:20px;
+    left:18px;
 
-        bottom:90px;
+    right:auto;
 
-    }
+    bottom:18px;
+
+}
 
 }
 
