@@ -500,27 +500,33 @@ RESPONSIVE
 
     .whatsapp-button{
 
-        width:56px;
+    right:18px;
+    bottom:18px;
 
-        height:56px;
+}
 
-        right:18px;
+.whatsapp-icon{
 
-        bottom:18px;
+    width:56px;
+    height:56px;
 
-    }
+}
 
-    #backToTop{
-
-    width:70px;
-
-    height:70px;
+#backToTop{
 
     left:18px;
-
     right:auto;
-
     bottom:18px;
+
+    width:56px;
+    height:56px;
+
+}
+
+.back-to-top-icon{
+
+    width:46px;
+    height:46px;
 
 }
 
