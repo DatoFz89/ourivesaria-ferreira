@@ -2790,17 +2790,17 @@ RESPONSIVE - MOBILE
 
     .hero p{
 
-    font-size:18px;
+    font-size:20px;
 
     line-height:1.8;
 
     color:#F5F5F5;
 
     text-shadow:
-        0 3px 8px rgba(0,0,0,.95),
-        0 0 18px rgba(0,0,0,.60);
+        0 4px 10px rgba(0,0,0,.98),
+        0 0 22px rgba(0,0,0,.70);
 
-}
+    }
 
     .hero-buttons{
         flex-direction:column;
