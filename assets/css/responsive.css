@@ -355,24 +355,24 @@ RESPONSIVE
 
     #backToTop{
 
-        left:18px;
-        right:auto;
-        bottom:18px;
+    left:18px;
+    right:auto;
+    bottom:18px;
 
-        width:56px;
-        height:56px;
+    width:56px;
+    height:56px;
 
-        animation:floatButton 3s ease-in-out infinite;
-        animation-delay:1.5s;
+}
 
-    }
+.back-to-top-icon{
 
-    .back-to-top-icon{
+    width:46px;
+    height:46px;
 
-        width:46px;
-        height:46px;
+    animation:floatButton 3s ease-in-out infinite;
+    animation-delay:1.5s;
 
-    }
+}
 
 }
 
