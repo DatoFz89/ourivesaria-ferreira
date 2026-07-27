@@ -2591,12 +2591,72 @@ PRELOAD
 }
 
 /*==================================================
-MOBILE MENU (dropdown fed by app.js)
+MOBILE MENU
 ==================================================*/
 
 .mobile-menu{
 
+    position:fixed;
+
+    top:95px;
+
+    left:0;
+
+    width:100%;
+
+    background:#080808;
+
+    padding:30px 0;
+
     display:none;
+
+    z-index:9998;
+
+}
+
+.mobile-menu.active{
+
+    display:block;
+
+}
+
+.mobile-menu ul{
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+    text-align:center;
+
+}
+
+.mobile-menu li{
+
+    margin:20px 0;
+
+}
+
+.mobile-menu a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+.mobile-menu a:hover{
+
+    color:var(--gold);
 
 }
 
