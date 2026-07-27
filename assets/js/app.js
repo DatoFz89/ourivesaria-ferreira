@@ -3,20 +3,6 @@ OURIVESARIA FERREIRA
 MAIN.JS
 ==================================================*/
 
-document.addEventListener("DOMContentLoaded", () => {
-
-    initHeader();
-
-    initReveal();
-
-    initBackToTop();
-
-    initSmoothScroll();
-
-    initLoader();
-
-});
-
 /*==================================================
 HEADER
 ==================================================*/
@@ -130,45 +116,6 @@ function initLoader(){
     });
 
 }
-
-/*==================================================
-BACK TO TOP
-==================================================*/
-
-function initBackToTop(){
-
-    const button=document.getElementById("backToTop");
-
-    if(!button) return;
-
-    window.addEventListener("scroll",()=>{
-
-        if(window.scrollY>500){
-
-            button.classList.add("show");
-
-        }else{
-
-            button.classList.remove("show");
-
-        }
-
-    });
-
-    button.addEventListener("click",()=>{
-
-        window.scrollTo({
-
-            top:0,
-
-            behavior:"smooth"
-
-        });
-
-    });
-
-}
-
 
 /*==================================================
 MOBILE MENU
@@ -292,8 +239,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     initLoader();
 
-    initBackToTop();
-
     initMobileMenu();
 
     initParallax();
@@ -305,7 +250,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 /*==================================================
 CUSTOM CURSOR
 ==================================================*/
-
 
 
 /*==================================================
@@ -408,14 +352,11 @@ INIT EXTRA
 
 document.addEventListener("DOMContentLoaded",()=>{
 
-   
-
     initHeaderScroll();
 
     initActiveMenu();
 
 });
-
 
 /*==================================================
 GALLERY HOVER
@@ -436,6 +377,7 @@ function initGallery(){
             const y=e.clientY-rect.top;
 
             card.style.setProperty("--x",x+"px");
+
             card.style.setProperty("--y",y+"px");
 
         });
@@ -461,9 +403,11 @@ function initRipple(){
             const size=Math.max(rect.width,rect.height);
 
             ripple.style.width=size+"px";
+
             ripple.style.height=size+"px";
 
             ripple.style.left=(e.clientX-rect.left-size/2)+"px";
+
             ripple.style.top=(e.clientY-rect.top-size/2)+"px";
 
             ripple.className="ripple";
@@ -535,36 +479,3 @@ END
 ==================================================*/
 
 console.log("Ourivesaria Ferreira Premium v3.0 Loaded");
-
-
-/*==================================================
-MOBILE MENU
-==================================================*/
-
-const mobileToggle=document.querySelector(".mobile-toggle");
-
-const navigation=document.querySelector(".navigation");
-
-if(mobileToggle && navigation){
-
-    mobileToggle.addEventListener("click",()=>{
-
-        navigation.classList.toggle("active");
-
-        mobileToggle.classList.toggle("active");
-
-    });
-
-    document.querySelectorAll(".navigation a").forEach(link=>{
-
-        link.addEventListener("click",()=>{
-
-            navigation.classList.remove("active");
-
-            mobileToggle.classList.remove("active");
-
-        });
-
-    });
-
-}
