@@ -253,7 +253,7 @@ CUSTOM CURSOR
 
 
 /*==================================================
-HEADER HIDE / SHOW
+HEADER FIXO
 ==================================================*/
 
 function initHeaderScroll(){
@@ -262,13 +262,9 @@ function initHeaderScroll(){
 
     if(!header) return;
 
-    let lastScroll=0;
-
     window.addEventListener("scroll",()=>{
 
-        const current=window.pageYOffset;
-
-        if(current>100){
+        if(window.scrollY>80){
 
             header.classList.add("scrolled");
 
@@ -277,26 +273,6 @@ function initHeaderScroll(){
             header.classList.remove("scrolled");
 
         }
-
-        if(current>250){
-
-            if(current>lastScroll){
-
-                header.style.transform="translateY(-100%)";
-
-            }else{
-
-                header.style.transform="translateY(0)";
-
-            }
-
-        }else{
-
-            header.style.transform="translateY(0)";
-
-        }
-
-        lastScroll=current;
 
     });
 
