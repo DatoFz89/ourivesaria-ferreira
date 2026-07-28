@@ -920,16 +920,16 @@ SCROLL INDICATOR
 
 
 /*==================================================
-COLEÇÕES
+ARTIGOS
 ==================================================*/
 
-.collections{
+.articles{
 
     background:#080808;
 
 }
 
-.collections-grid{
+.articles-grid{
 
     display:grid;
 
@@ -940,10 +940,10 @@ COLEÇÕES
 }
 
 /*==================================================
-COLLECTION CARD
+ARTICLE CARD
 ==================================================*/
 
-.collection-card{
+.article-card{
 
     position:relative;
 
@@ -961,7 +961,7 @@ COLLECTION CARD
 
 }
 
-.collection-card:hover{
+.article-card:hover{
 
     transform:translateY(-12px);
 
@@ -969,7 +969,7 @@ COLLECTION CARD
 
 }
 
-.collection-card img{
+.article-card img{
 
     width:100%;
 
@@ -981,7 +981,7 @@ COLLECTION CARD
 
 }
 
-.collection-card:hover img{
+.article-card:hover img{
 
     transform:scale(1.08);
 
@@ -991,7 +991,7 @@ COLLECTION CARD
 OVERLAY
 ==================================================*/
 
-.collection-content{
+.article-content{
 
     position:absolute;
 
@@ -1021,7 +1021,7 @@ OVERLAY
 
 }
 
-.collection-content span{
+.article-content span{
 
     color:var(--gold);
 
@@ -1035,7 +1035,7 @@ OVERLAY
 
 }
 
-.collection-content h3{
+.article-content h3{
 
     font-family:'Cormorant Garamond',serif;
 
@@ -1049,7 +1049,7 @@ OVERLAY
 
 }
 
-.collection-content a{
+.article-content a{
 
     display:inline-flex;
 
@@ -1071,7 +1071,7 @@ OVERLAY
 
 }
 
-.collection-content a::after{
+.article-content a::after{
 
     content:"→";
 
@@ -1079,13 +1079,13 @@ OVERLAY
 
 }
 
-.collection-content a:hover{
+.article-content a:hover{
 
     color:var(--gold);
 
 }
 
-.collection-content a:hover::after{
+.article-content a:hover::after{
 
     transform:translateX(8px);
 
@@ -1095,7 +1095,7 @@ OVERLAY
 EFEITO DE LUZ
 ==================================================*/
 
-.collection-card::before{
+.article-card::before{
 
     content:"";
 
@@ -1125,7 +1125,7 @@ EFEITO DE LUZ
 
 }
 
-.collection-card:hover::before{
+.article-card:hover::before{
 
     transform:translateX(130%);
 
@@ -1135,7 +1135,7 @@ EFEITO DE LUZ
 BORDA PREMIUM
 ==================================================*/
 
-.collection-card::after{
+.article-card::after{
 
     content:"";
 
@@ -2496,79 +2496,7 @@ WHATSAPP
 
 }
 
-/*==================================================
-BACK TO TOP
-==================================================*/
 
-#backToTop{
-
-    position:fixed;
-
-    right:25px;
-
-    bottom:110px;
-
-    width:70px;
-
-    height:70px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:transparent;
-
-    border:none;
-
-    padding:0;
-
-    cursor:pointer;
-
-    opacity:0;
-
-    visibility:hidden;
-
-    transition:.35s;
-
-    z-index:998;
-
-}
-
-#backToTop.show{
-
-    opacity:1;
-
-    visibility:visible;
-
-}
-
-#backToTop:hover{
-
-    transform:translateY(-4px);
-
-}
-
-.back-to-top-icon{
-
-    width:58px;
-
-    height:58px;
-
-    display:block;
-
-    transition:transform .3s ease;
-
-    filter:drop-shadow(0 6px 12px rgba(0,0,0,.45));
-
-}
-
-#backToTop:hover .back-to-top-icon{
-
-    transform:scale(1.08);
-
-}
 
 /*==================================================
 PRELOAD
@@ -2724,7 +2652,7 @@ body.loaded{
 
 }
 
-.collection-card,
+.article-card,
 .service-card,
 .testimonial-card,
 .contact-item,
@@ -2732,7 +2660,7 @@ body.loaded{
 
     will-change:transform;
 
-}
+    }
 
 @media (prefers-reduced-motion:reduce){
 
@@ -2776,7 +2704,7 @@ RESPONSIVE - TABLET
 
     }
 
-    .collections-grid{
+    .articles-grid{
 
         grid-template-columns:repeat(2,1fr);
 

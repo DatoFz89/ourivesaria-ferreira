@@ -62,7 +62,7 @@ RESPONSIVE
         grid-template-columns:repeat(2,1fr);
     }
 
-    .collections-grid{
+    .articles-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
@@ -214,8 +214,8 @@ RESPONSIVE
         font-size:38px;
     }
 
-    .collections-grid{
-        grid-template-columns:1fr;
+    .articles-grid{
+    grid-template-columns:1fr;
     }
 
     .services-grid{
@@ -309,7 +309,7 @@ RESPONSIVE
         font-size:42px;
     }
 
-    .collection-card img{
+    .article-card img{
         height:460px;
     }
 
@@ -353,26 +353,7 @@ RESPONSIVE
 
     }
 
-    #backToTop{
-
-    left:18px;
-    right:auto;
-    bottom:18px;
-
-    width:56px;
-    height:56px;
-
-}
-
-.back-to-top-icon{
-
-    width:46px;
-    height:46px;
-
-    animation:floatButton 3s ease-in-out infinite;
-    animation-delay:1.5s;
-
-}
+    
 
 }
 
