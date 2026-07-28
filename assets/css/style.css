@@ -976,6 +976,7 @@ ARTICLE CARD
     height:620px;
 
     object-fit:cover;
+    object-position:center bottom;
 
     transition:1s;
 
