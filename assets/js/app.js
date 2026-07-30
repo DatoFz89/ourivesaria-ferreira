@@ -3,26 +3,28 @@ OURIVESARIA FERREIRA
 MAIN.JS
 ==================================================*/
 
+"use strict";
+
 /*==================================================
 HEADER
 ==================================================*/
 
-function initHeader(){
+function initHeader() {
 
-    const header=document.querySelector(".header");
+    const header = document.querySelector(".header");
 
-    window.addEventListener("scroll",()=>{
+    if (!header) return;
 
-        if(window.scrollY>80){
+    const updateHeader = () => {
 
-            header.classList.add("scrolled");
+        header.classList.toggle("scrolled", window.scrollY > 80);
 
-        }else{
+    };
 
-            header.classList.remove("scrolled");
+    updateHeader();
 
-        }
-
+    window.addEventListener("scroll", updateHeader, {
+        passive: true
     });
 
 }
@@ -31,37 +33,35 @@ function initHeader(){
 REVEAL
 ==================================================*/
 
-function initReveal(){
+function initReveal() {
 
-    const elements=document.querySelectorAll(
-
-        ".section-header,.collection-card,.service-card,.history-image,.history-content,.testimonial-card,.brand-item,.contact-item,.contact-form,.cta-box"
-
+    const elements = document.querySelectorAll(
+        ".section-header, .collection-card, .service-card, .history-image, .history-content, .testimonial-card, .brand-item, .contact-item, .contact-form, .cta-box"
     );
 
-    const observer=new IntersectionObserver((entries)=>{
+    if (!elements.length) return;
 
-        entries.forEach(entry=>{
+    const observer = new IntersectionObserver((entries, obs) => {
 
-            if(entry.isIntersecting){
+        entries.forEach(entry => {
 
-                entry.target.classList.add("active");
+            if (!entry.isIntersecting) return;
 
-            }
+            entry.target.classList.add("active");
+
+            obs.unobserve(entry.target);
 
         });
 
-    },{
-
-        threshold:.15
-
+    }, {
+        threshold: 0.15
     });
 
-    elements.forEach(el=>{
+    elements.forEach(element => {
 
-        el.classList.add("reveal");
+        element.classList.add("reveal");
 
-        observer.observe(el);
+        observer.observe(element);
 
     });
 
@@ -71,22 +71,25 @@ function initReveal(){
 SMOOTH SCROLL
 ==================================================*/
 
-function initSmoothScroll(){
+function initSmoothScroll() {
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    const links = document.querySelectorAll('a[href^="#"]');
 
-        anchor.addEventListener("click",function(e){
+    if (!links.length) return;
 
-            const target=document.querySelector(this.getAttribute("href"));
+    links.forEach(link => {
 
-            if(!target) return;
+        link.addEventListener("click", event => {
 
-            e.preventDefault();
+            const target = document.querySelector(link.getAttribute("href"));
+
+            if (!target) return;
+
+            event.preventDefault();
 
             target.scrollIntoView({
-
-                behavior:"smooth"
-
+                behavior: "smooth",
+                block: "start"
             });
 
         });
@@ -99,13 +102,13 @@ function initSmoothScroll(){
 LOADER
 ==================================================*/
 
-function initLoader(){
+function initLoader() {
 
-    const loader=document.getElementById("loader");
+    const loader = document.getElementById("loader");
 
-    window.addEventListener("load",()=>{
+    window.addEventListener("load", () => {
 
-        if(loader){
+        if (loader) {
 
             loader.classList.add("loaded");
 
@@ -121,35 +124,32 @@ function initLoader(){
 MOBILE MENU
 ==================================================*/
 
-function initMobileMenu(){
+function initMobileMenu() {
 
-    const toggle=document.querySelector(".mobile-toggle");
+    const toggle = document.querySelector(".mobile-toggle");
+    const menu = document.querySelector(".mobile-menu");
 
-    const menu=document.querySelector(".mobile-menu");
+    if (!toggle || !menu) return;
 
-    if(!toggle || !menu) return;
+    const closeMenu = () => {
 
-    toggle.addEventListener("click",()=>{
+        toggle.classList.remove("active");
+        menu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+
+    };
+
+    toggle.addEventListener("click", () => {
 
         toggle.classList.toggle("active");
-
         menu.classList.toggle("active");
-
         document.body.classList.toggle("menu-open");
 
     });
 
-    menu.querySelectorAll("a").forEach(link=>{
+    menu.querySelectorAll("a").forEach(link => {
 
-        link.addEventListener("click",()=>{
-
-            menu.classList.remove("active");
-
-            toggle.classList.remove("active");
-
-            document.body.classList.remove("menu-open");
-
-        });
+        link.addEventListener("click", closeMenu);
 
     });
 
@@ -159,18 +159,23 @@ function initMobileMenu(){
 PARALLAX HERO
 ==================================================*/
 
-function initParallax(){
+function initParallax() {
 
-    const image=document.querySelector(".hero-video img");
+    const image = document.querySelector(".hero-video img");
 
-    if(!image) return;
+    if (!image) return;
 
-    window.addEventListener("scroll",()=>{
+    const updateParallax = () => {
 
-        const offset=window.pageYOffset;
+        image.style.transform =
+            `translateY(${window.pageYOffset * 0.25}px) scale(1.08)`;
 
-        image.style.transform=`translateY(${offset*0.25}px) scale(1.08)`;
+    };
 
+    updateParallax();
+
+    window.addEventListener("scroll", updateParallax, {
+        passive: true
     });
 
 }
@@ -179,151 +184,121 @@ function initParallax(){
 COUNTERS
 ==================================================*/
 
-function initCounters(){
+function initCounters() {
 
-    const numbers=document.querySelectorAll("[data-count]");
+    const counters = document.querySelectorAll("[data-count]");
 
-    if(!numbers.length) return;
+    if (!counters.length) return;
 
-    const observer=new IntersectionObserver(entries=>{
+    const observer = new IntersectionObserver((entries, obs) => {
 
-        entries.forEach(entry=>{
+        entries.forEach(entry => {
 
-            if(!entry.isIntersecting) return;
+            if (!entry.isIntersecting) return;
 
-            const element=entry.target;
+            const element = entry.target;
+            const target = Number(element.dataset.count);
 
-            const target=parseInt(element.dataset.count);
+            let current = 0;
 
-            let value=0;
+            const increment = Math.max(1, Math.ceil(target / 120));
 
-            const speed=Math.max(10,target/120);
+            const timer = setInterval(() => {
 
-            const timer=setInterval(()=>{
+                current += increment;
 
-                value+=speed;
+                if (current >= target) {
 
-                if(value>=target){
-
-                    value=target;
-
+                    current = target;
                     clearInterval(timer);
 
                 }
 
-                element.textContent=Math.floor(value);
+                element.textContent = current;
 
-            },15);
+            }, 15);
 
-            observer.unobserve(element);
+            obs.unobserve(element);
 
         });
 
+    }, {
+        threshold: 0.3
     });
 
-    numbers.forEach(number=>observer.observe(number));
+    counters.forEach(counter => {
+
+        observer.observe(counter);
+
+    });
 
 }
-
-/*==================================================
-INIT
-==================================================*/
-
-document.addEventListener("DOMContentLoaded",()=>{
-
-    initHeader();
-
-    initReveal();
-
-    initSmoothScroll();
-
-    initLoader();
-
-    initMobileMenu();
-
-    initParallax();
-
-    initCounters();
-
-});
-
-
 
 /*==================================================
 ACTIVE MENU
 ==================================================*/
 
-function initActiveMenu(){
+function initActiveMenu() {
 
-    const sections=document.querySelectorAll("section[id]");
+    const sections = document.querySelectorAll("section[id]");
+    const links = document.querySelectorAll(".navigation a");
 
-    const links=document.querySelectorAll(".navigation a");
+    if (!sections.length || !links.length) return;
 
-    window.addEventListener("scroll",()=>{
+    const updateActiveMenu = () => {
 
-        let current="";
+        let current = "";
 
-        sections.forEach(section=>{
+        sections.forEach(section => {
 
-            const top=section.offsetTop-180;
+            const top = section.offsetTop - 180;
+            const bottom = top + section.offsetHeight;
 
-            const height=section.offsetHeight;
+            if (window.scrollY >= top && window.scrollY < bottom) {
 
-            if(window.scrollY>=top && window.scrollY<top+height){
-
-                current=section.getAttribute("id");
-
-            }
-
-        });
-
-        links.forEach(link=>{
-
-            link.classList.remove("active");
-
-            if(link.getAttribute("href")==="#"+current){
-
-                link.classList.add("active");
+                current = section.id;
 
             }
 
         });
 
+        links.forEach(link => {
+
+            link.classList.toggle(
+                "active",
+                link.getAttribute("href") === `#${current}`
+            );
+
+        });
+
+    };
+
+    updateActiveMenu();
+
+    window.addEventListener("scroll", updateActiveMenu, {
+        passive: true
     });
 
 }
 
 /*==================================================
-INIT EXTRA
-==================================================*/
-
-document.addEventListener("DOMContentLoaded",()=>{
-
-    initActiveMenu();
-
-});
-
-/*==================================================
 GALLERY HOVER
 ==================================================*/
 
-function initGallery(){
+function initGallery() {
 
-    const cards=document.querySelectorAll(".collection-card");
+    const cards = document.querySelectorAll(".collection-card");
 
-    cards.forEach(card=>{
+    if (!cards.length) return;
 
-        card.addEventListener("mousemove",(e)=>{
+    cards.forEach(card => {
 
-            const rect=card.getBoundingClientRect();
+        card.addEventListener("mousemove", event => {
 
-            const x=e.clientX-rect.left;
+            const rect = card.getBoundingClientRect();
 
-            const y=e.clientY-rect.top;
-
-            card.style.setProperty("--x",x+"px");
-
-            card.style.setProperty("--y",y+"px");
+            card.style.setProperty("--x", `${event.clientX - rect.left}px`);
+            card.style.setProperty("--y", `${event.clientY - rect.top}px`);
 
         });
 
@@ -335,35 +310,31 @@ function initGallery(){
 BUTTON RIPPLE
 ==================================================*/
 
-function initRipple(){
+function initRipple() {
 
-    document.querySelectorAll(".btn-gold,.header-button").forEach(button=>{
+    const buttons = document.querySelectorAll(".btn-gold, .header-button");
 
-        button.addEventListener("click",function(e){
+    if (!buttons.length) return;
 
-            const ripple=document.createElement("span");
+    buttons.forEach(button => {
 
-            const rect=this.getBoundingClientRect();
+        button.addEventListener("click", event => {
 
-            const size=Math.max(rect.width,rect.height);
+            const ripple = document.createElement("span");
 
-            ripple.style.width=size+"px";
+            const rect = button.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
 
-            ripple.style.height=size+"px";
+            ripple.className = "ripple";
 
-            ripple.style.left=(e.clientX-rect.left-size/2)+"px";
+            ripple.style.width = `${size}px`;
+            ripple.style.height = `${size}px`;
+            ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+            ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
 
-            ripple.style.top=(e.clientY-rect.top-size/2)+"px";
+            button.appendChild(ripple);
 
-            ripple.className="ripple";
-
-            this.appendChild(ripple);
-
-            setTimeout(()=>{
-
-                ripple.remove();
-
-            },700);
+            setTimeout(() => ripple.remove(), 700);
 
         });
 
@@ -375,13 +346,15 @@ function initRipple(){
 PRELOAD IMAGES
 ==================================================*/
 
-function preloadImages(){
+function preloadImages() {
 
-    document.querySelectorAll("img").forEach(img=>{
+    document.querySelectorAll("img").forEach(img => {
 
-        const image=new Image();
+        if (!img.src) return;
 
-        image.src=img.src;
+        const preload = new Image();
+
+        preload.src = img.src;
 
     });
 
@@ -391,31 +364,41 @@ function preloadImages(){
 CURRENT YEAR
 ==================================================*/
 
-function updateYear(){
+function updateYear() {
 
-    const year=document.getElementById("year");
+    const year = document.getElementById("year");
 
-    if(year){
+    if (year) {
 
-        year.textContent=new Date().getFullYear();
+        year.textContent = new Date().getFullYear();
 
     }
 
 }
 
 /*==================================================
-INITIALIZE EVERYTHING
+INITIALIZATION
 ==================================================*/
 
-window.addEventListener("load",()=>{
+document.addEventListener("DOMContentLoaded", () => {
+
+    initHeader();
+    initReveal();
+    initSmoothScroll();
+    initLoader();
+    initMobileMenu();
+    initParallax();
+    initCounters();
+    initActiveMenu();
+    initGallery();
+    initRipple();
+
+});
+
+window.addEventListener("load", () => {
 
     preloadImages();
-
     updateYear();
-
-    initGallery();
-
-    initRipple();
 
 });
 
@@ -423,4 +406,4 @@ window.addEventListener("load",()=>{
 END
 ==================================================*/
 
-console.log("Ourivesaria Ferreira Premium v3.0 Loaded");
+console.log("Ourivesaria Ferreira Premium v3.1 Loaded");
