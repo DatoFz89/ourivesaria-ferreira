@@ -247,36 +247,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 });
 
-/*==================================================
-CUSTOM CURSOR
-==================================================*/
 
-
-/*==================================================
-HEADER FIXO
-==================================================*/
-
-function initHeaderScroll(){
-
-    const header=document.querySelector(".header");
-
-    if(!header) return;
-
-    window.addEventListener("scroll",()=>{
-
-        if(window.scrollY>80){
-
-            header.classList.add("scrolled");
-
-        }else{
-
-            header.classList.remove("scrolled");
-
-        }
-
-    });
-
-}
 
 /*==================================================
 ACTIVE MENU
@@ -327,8 +298,6 @@ INIT EXTRA
 ==================================================*/
 
 document.addEventListener("DOMContentLoaded",()=>{
-
-    initHeaderScroll();
 
     initActiveMenu();
 

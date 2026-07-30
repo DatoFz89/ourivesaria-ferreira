@@ -573,27 +573,10 @@ MOBILE TOGGLE
 }
 
 .mobile-toggle span{
-
-    width:22px;
-
-    height:2px;
-
-    background:#fff;
-
-    transition:.35s ease;
-
-}
-
-.mobile-toggle span{
-
     width:100%;
-
     height:2px;
-
     background:#fff;
-
-    transition:.35s;
-
+    transition:.35s ease;
 }
 
 
