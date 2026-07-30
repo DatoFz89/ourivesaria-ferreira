@@ -1760,75 +1760,29 @@ MARCAS
 
 }
 
-.brands-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(6,1fr);
-
-    gap:35px;
-
-    align-items:center;
-
-}
-
-.brand-item{
-
-    height:160px;
+.brands-logos{
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-    padding:35px;
-
-    border-radius:22px;
-
-    background:#101010;
-
-    border:1px solid rgba(255,255,255,.05);
-
-    transition:.45s;
+    margin-top:70px;
 
 }
 
-.brand-item:hover{
+.brands-logos img{
 
-    transform:translateY(-8px);
-
-    border-color:rgba(201,166,107,.35);
-
-    box-shadow:0 30px 70px rgba(0,0,0,.35);
-
-}
-
-.brand-item img{
-
-    max-width:170px;
-
-    max-height:70px;
-
-    width:auto;
-
+    width:100%;
+    max-width:900px;
     height:auto;
 
-    filter:grayscale(100%) brightness(.85);
-
-    opacity:.75;
-
-    transition:.45s;
+    transition:.4s;
 
 }
 
-.brand-item:hover img{
+.brands-logos img:hover{
 
-    filter:none;
-
-    opacity:1;
-
-    transform:scale(1.08);
+    transform:scale(1.02);
 
 }
 
