@@ -236,13 +236,7 @@ RESPONSIVE
         grid-template-columns:1fr;
     }
 
-    .contact .container{
-
-    grid-template-columns:1fr;
-
-    gap:60px;
-
-    }
+    
 
     .brands-grid{
         grid-template-columns:repeat(2,1fr);
