@@ -224,9 +224,9 @@ RESPONSIVE
 
     .article-card{
 
-        box-shadow:
-            0 20px 60px rgba(0,0,0,.40),
-            0 0 0 1px rgba(255,255,255,.04);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.40),
+        0 0 0 1px rgba(255,255,255,.06);
 
     }
 
