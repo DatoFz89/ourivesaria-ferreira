@@ -169,7 +169,7 @@ RESPONSIVE
 768px
 =========================*/
 
-@@media (max-width:768px){
+@media (max-width:768px){
 
     section{
         padding:100px 0;
@@ -234,6 +234,14 @@ RESPONSIVE
 
     .services-grid{
         grid-template-columns:1fr;
+    }
+
+    .contact .container{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
     }
 
     .brands-grid{
