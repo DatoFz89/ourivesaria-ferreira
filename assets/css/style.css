@@ -743,6 +743,12 @@ HERO
 
     letter-spacing:-1px;
 
+    color:#FFFFFF;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.18),
+        0 10px 30px rgba(0,0,0,.20);
+
 }
 
 .hero p{
