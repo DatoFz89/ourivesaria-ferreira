@@ -303,9 +303,9 @@ BUTTONS
 
     border-color:var(--gold);
 
-    color:#FFFFFF;
+    color:#1E1B18;
 
-    background:rgba(212,175,55,.06);
+    background:rgba(212,175,55,.08);
 
     box-shadow:
         0 16px 35px rgba(0,0,0,.30);
