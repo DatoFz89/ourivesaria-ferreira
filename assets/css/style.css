@@ -954,7 +954,11 @@ ARTIGOS
 
 .articles{
 
-    background:#080808;
+    background:linear-gradient(
+        180deg,
+        #F8F5F0 0%,
+        #F4EFE7 100%
+    );
 
 }
 
