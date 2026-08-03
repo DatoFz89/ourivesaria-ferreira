@@ -746,8 +746,9 @@ HERO
     color:#FFFFFF;
 
     text-shadow:
-        0 2px 8px rgba(0,0,0,.18),
-        0 10px 30px rgba(0,0,0,.20);
+    0 2px 6px rgba(0,0,0,.18),
+    0 12px 35px rgba(0,0,0,.25),
+    0 0 18px rgba(255,255,255,.10);
 
 }
 
