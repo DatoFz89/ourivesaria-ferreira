@@ -206,6 +206,7 @@ TITLES
     font-size:18px;
 
 }
+
 /*=========================
 BUTTONS
 =========================*/
@@ -2631,6 +2632,7 @@ RESPONSIVE - TABLET
     }
 
     .hero-left,
+
     .hero-right{
 
         justify-content:center;
