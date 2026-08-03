@@ -339,9 +339,13 @@ HEADER
     box-shadow .35s ease,
     transform .35s ease;
 
-    background:rgba(8,8,8,.18);
+    background:#F6F2EB;
 
     backdrop-filter:blur(8px);
+
+    border-bottom:1px solid rgba(180,155,110,.25);
+
+    box-shadow:0 2px 14px rgba(0,0,0,.05);
 
 }
 
