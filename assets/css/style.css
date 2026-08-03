@@ -986,11 +986,15 @@ ARTICLE CARD
 
     cursor:pointer;
 
-    background:#111;
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(191,160,102,.18);
 
     box-shadow:
-    0 20px 60px rgba(0,0,0,.40),
-    0 0 0 1px rgba(255,255,255,.04);
+        0 12px 35px rgba(90,70,35,.08);
 
     transition:.45s;
 
@@ -998,9 +1002,10 @@ ARTICLE CARD
 
 .article-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
-    box-shadow:0 40px 90px rgba(0,0,0,.45);
+    box-shadow:
+        0 22px 55px rgba(90,70,35,.14);
 
 }
 
