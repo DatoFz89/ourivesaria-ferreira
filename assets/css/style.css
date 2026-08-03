@@ -1046,17 +1046,15 @@ OVERLAY
 
     padding:45px;
 
-    background:
-
-    linear-gradient(
+    background:linear-gradient(
 
         to top,
 
-        rgba(38,30,22,.82) 0%,
+        rgba(50,40,28,.62) 0%,
 
-        rgba(38,30,22,.34) 45%,
+        rgba(50,40,28,.18) 45%,
 
-        transparent 78%
+        transparent 75%
 
     );
 
