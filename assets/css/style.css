@@ -1050,13 +1050,13 @@ OVERLAY
 
     linear-gradient(
 
-    to top,
+        to top,
 
-    rgba(0,0,0,.92),
+        rgba(38,30,22,.82) 0%,
 
-    rgba(0,0,0,.20),
+        rgba(38,30,22,.34) 45%,
 
-    transparent
+        transparent 78%
 
     );
 
