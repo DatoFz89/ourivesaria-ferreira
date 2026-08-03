@@ -145,7 +145,7 @@ section{
 
     position:relative;
 
-    padding:140px 0;
+    padding:100px 0;
 
     overflow:hidden;
 
@@ -191,6 +191,8 @@ TITLES
 
     margin-bottom:25px;
 
+    color:#2F2A24;
+
 }
 
 .section-header p{
@@ -199,7 +201,7 @@ TITLES
 
     margin:0 auto;
 
-    color:#CFCFCF;
+    color:#6F685F;
 
     line-height:2;
 
@@ -970,6 +972,8 @@ ARTIGOS
 
     gap:35px;
 
+    margin-top:80px;
+
 }
 
 /*==================================================
@@ -986,10 +990,12 @@ ARTICLE CARD
 
     cursor:pointer;
 
-    background:rgba(255,255,255,.72);
+    background:#FDFBF8;
 
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(191,160,102,.15);
+
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
 
     border:1px solid rgba(191,160,102,.18);
 
@@ -1002,10 +1008,10 @@ ARTICLE CARD
 
 .article-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 
     box-shadow:
-        0 22px 55px rgba(90,70,35,.14);
+    0 20px 45px rgba(90,70,35,.18);
 
 }
 
@@ -1066,9 +1072,11 @@ OVERLAY
 
     text-transform:uppercase;
 
-    letter-spacing:5px;
+    letter-spacing:3px;
 
-    font-size:12px;
+    font-size:11px;
+
+    font-weight:600;
 
     margin-bottom:14px;
 
@@ -1078,7 +1086,7 @@ OVERLAY
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:52px;
+    font-size:48px;
 
     font-weight:600;
 
