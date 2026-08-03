@@ -1205,7 +1205,11 @@ HISTÓRIA
 
 .history{
 
-    background:#050505;
+    background:linear-gradient(
+        180deg,
+        #F3EEE6 0%,
+        #ECE5DA 100%
+    );
 
 }
 
@@ -1215,7 +1219,7 @@ HISTÓRIA
 
     grid-template-columns:1fr 1fr;
 
-    gap:90px;
+    gap:70px;
 
     align-items:center;
 
@@ -1233,7 +1237,8 @@ IMAGEM
 
     border-radius:26px;
 
-    box-shadow:0 30px 80px rgba(0,0,0,.35);
+    box-shadow:
+        0 25px 60px rgba(90,70,35,.18);
 
 }
 
@@ -1251,7 +1256,7 @@ IMAGEM
 
 .history-image:hover img{
 
-    transform:scale(1.06);
+    transform:scale(1.04);
 
 }
 
@@ -1263,9 +1268,9 @@ IMAGEM
 
     inset:0;
 
-    border:1px solid rgba(255,255,255,.08);
+    border:1px solid rgba(191,160,102,.12);
 
-    border-radius:28px;
+    border-radius:26px;
 
     pointer-events:none;
 
@@ -1291,13 +1296,13 @@ CONTEÚDO
 
     margin:22px 0 35px;
 
-    color:#fff;
+    color:#2F2A24;
 
 }
 
 .history-content p{
 
-    color:#CFCFCF;
+    color:#6B645B;
 
     font-size:18px;
 
@@ -1329,23 +1334,25 @@ ESTATÍSTICAS
 
     border-radius:20px;
 
-    background:rgba(255,255,255,.04);
+    background:#FCFAF6;
 
-    border:1px solid rgba(200,165,106,.15);
+    border:1px solid rgba(191,160,102,.18);
 
-    backdrop-filter:blur(12px);
+    box-shadow:
+    0 15px 35px rgba(90,70,35,.10);
 
-    transition:.4s ease;
+    transition:.35s ease;
 
 }
 
 .history-stats div:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-5px);
 
-    border-color:rgba(200,165,106,.35);
+    border-color:rgba(191,160,102,.35);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    box-shadow:
+        0 18px 40px rgba(90,70,35,.15);
 
 }
 
@@ -1363,15 +1370,16 @@ ESTATÍSTICAS
 
 .history-stats span{
 
-    color:#D4D4D4;
+    color:#6B645B;
 
-    font-size:15px;
+    font-size:14px;
 
-    letter-spacing:1px;
+    letter-spacing:1.5px;
 
     text-transform:uppercase;
 
 }
+
 /*==================================================
 LINHA DECORATIVA
 ==================================================*/
