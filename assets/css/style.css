@@ -175,7 +175,7 @@ TITLES
 
     max-width:900px;
 
-    margin:0 auto 90px;
+    margin:0 auto 70px;
 
     text-align:center;
 
@@ -201,7 +201,7 @@ TITLES
 
     margin:0 auto;
 
-    color:#6F685F;
+    color:#635C54;
 
     line-height:2;
 
@@ -600,7 +600,7 @@ HERO
 
     position:relative;
 
-    min-height:100vh;
+    min-height:90vh;
 
     display:flex;
 
@@ -972,7 +972,7 @@ ARTIGOS
 
     gap:35px;
 
-    margin-top:80px;
+    margin-top:60px;
 
 }
 
