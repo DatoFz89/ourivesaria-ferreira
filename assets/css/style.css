@@ -786,17 +786,17 @@ FLOATING CARD
 
     border-radius:28px;
 
-    background:rgba(255,255,255,.08);
+    background:rgba(245,239,230,.82);
 
-    backdrop-filter:blur(3px);
+    backdrop-filter:blur(8px);
 
-    -webkit-backdrop-filter:blur(3px);
+    -webkit-backdrop-filter:blur(8px);
 
-    border:1px solid rgba(255,255,255,.22);
+    border:1px solid rgba(201,166,107,.26);
 
     box-shadow:
-        0 16px 35px rgba(35,28,18,.10),
-        inset 0 1px 0 rgba(255,255,255,.18);
+        0 18px 40px rgba(40,30,20,.12),
+        inset 0 1px 0 rgba(255,255,255,.45);
 
     transition:
         background .45s ease,
@@ -812,13 +812,13 @@ FLOATING CARD
 
     transform:translateY(-6px);
 
-    background:rgba(255,255,255,.11);
+    background:rgba(248,243,235,.88);
 
     box-shadow:
-        0 22px 45px rgba(35,28,18,.14),
-        inset 0 1px 0 rgba(255,255,255,.22);
+        0 24px 50px rgba(40,30,20,.16),
+        inset 0 1px 0 rgba(255,255,255,.55);
 
-    border-color:rgba(201,166,107,.38);
+    border-color:rgba(201,166,107,.42);
 
 }
 
@@ -842,18 +842,23 @@ FLOATING CARD
 
 }
 
-
 .floating-card span{
 
-    color:var(--gold);
+    display:block;
+
+    margin-bottom:16px;
+
+    color:#A47B3C;
 
     letter-spacing:5px;
 
     font-size:12px;
 
+    font-weight:600;
+
     text-transform:uppercase;
 
-    text-shadow:0 2px 10px rgba(0,0,0,.7);
+    text-shadow:none;
 
 }
 
@@ -865,21 +870,23 @@ FLOATING CARD
 
     line-height:1.1;
 
-    margin:22px 0;
+    margin:0 0 24px;
 
-    text-shadow:0 2px 12px rgba(0,0,0,.7);
+    color:#2F2923;
+
+    text-shadow:none;
 
 }
 
 .floating-card p{
 
-    color:#D2D2D2;
+    color:#5D564E;
 
     line-height:1.9;
 
     font-size:17px;
 
-    text-shadow:0 2px 12px rgba(0,0,0,.7);
+    text-shadow:none;
 
 }
 
