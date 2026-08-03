@@ -351,13 +351,16 @@ HEADER
 
 .header.scrolled{
 
-    background:rgba(8,8,8,.92);
+    background:rgba(248,245,239,.94);
 
     backdrop-filter:blur(18px);
 
-    box-shadow:0 12px 35px rgba(0,0,0,.28);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    border-bottom:1px solid rgba(201,166,92,.25);
 
 }
+
 .header .container{
 
     display:flex;
