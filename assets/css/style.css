@@ -2516,34 +2516,29 @@ WHATSAPP
 ==================================================*/
 
 .whatsapp-button{
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 9999;
-    display: block;
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    z-index:9999;
+    display:block;
+    transition:transform .3s ease;
 }
 
 .whatsapp-icon{
-    width: 70px;
-    height: 70px;
-    display: block;
-    transition: transform .3s ease;
-    filter: drop-shadow(0 6px 12px rgba(0,0,0,.45));
-}
-
-.whatsapp-button:hover .whatsapp-icon{
-    transform: scale(1.08);
+    width:70px;
+    height:70px;
+    display:block;
+    transition:transform .3s ease, filter .3s ease;
+    filter:drop-shadow(0 6px 12px rgba(0,0,0,.45));
 }
 
 .whatsapp-button:hover{
+    transform:translateY(-4px);
+}
 
-    transform:translateY(-4px) scale(1.06);
-
-    box-shadow:
-        0 18px 40px rgba(0,0,0,.40),
-        0 6px 18px rgba(212,175,55,.35),
-        inset 0 1px 0 rgba(255,255,255,.35);
-
+.whatsapp-button:hover .whatsapp-icon{
+    transform:scale(1.08);
+    filter:drop-shadow(0 10px 18px rgba(0,0,0,.35));
 }
 
 
