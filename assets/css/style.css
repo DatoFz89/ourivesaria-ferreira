@@ -1401,7 +1401,7 @@ LINHA DECORATIVA
 }
 
 /*==================================================
-ATELIER
+OFICINA
 ==================================================*/
 
 .atelier{
@@ -1410,13 +1410,13 @@ ATELIER
 
     overflow:hidden;
 
-    min-height:900px;
+    min-height:760px;
 
     display:flex;
 
     align-items:center;
 
-    padding:180px 0;
+    padding:130px 0;
 
 }
 
@@ -1440,6 +1440,8 @@ ATELIER
 
     transform:scale(1.08);
 
+    opacity:.45;
+
 }
 
 .atelier-overlay{
@@ -1450,21 +1452,13 @@ ATELIER
 
     background:
     linear-gradient(
-    90deg,
-    rgba(5,5,5,.92) 0%,
-    rgba(5,5,5,.78) 35%,
-    rgba(5,5,5,.45) 100%
+        90deg,
+        rgba(20,16,12,.55) 0%,
+        rgba(20,16,12,.35) 42%,
+        rgba(20,16,12,.10) 100%
     );
 
     z-index:2;
-
-}
-
-.atelier .container{
-
-    position:relative;
-
-    z-index:5;
 
 }
 
@@ -1484,7 +1478,7 @@ CONTENT
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:84px;
+    font-size:72px;
 
     font-weight:600;
 
@@ -1492,11 +1486,13 @@ CONTENT
 
     margin:30px 0;
 
+    color:#2F2A24;
+
 }
 
 .atelier-content p{
 
-    color:#D2D2D2;
+    color:#5F5A53;
 
     font-size:19px;
 
@@ -1601,7 +1597,7 @@ LUXURY PANEL
     border-radius:50%;
 
     background:radial-gradient(
-    rgba(201,166,107,.12),
+    rgba(201,166,107,.08),
     transparent 70%
     );
 
