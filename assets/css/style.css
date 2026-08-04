@@ -278,39 +278,42 @@ BUTTONS
 
     border-radius:999px;
 
-    border:1px solid rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.45);
 
-    background:rgba(255,255,255,.04);
+    background:rgba(255,255,255,.18);
 
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(16px);
 
-    -webkit-backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(16px);
 
-    color:#fff;
+    color:#ffffff;
+
+    font-weight:700;
 
     transition:all .35s ease;
 
     cursor:pointer;
 
     box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.08),
-        0 10px 25px rgba(0,0,0,.25);
+        inset 0 1px 0 rgba(255,255,255,.35),
+        0 12px 30px rgba(0,0,0,.18);
 
 }
 
 
 .btn-outline:hover{
 
-    transform:translateY(-4px);
+    background:rgba(255,255,255,.28);
 
-    border-color:var(--gold);
+    border-color:rgba(255,255,255,.65);
 
-    color:#4A3A28;
+    color:#ffffff;
 
-    background:rgba(212,175,55,.08);
+    transform:translateY(-3px);
 
     box-shadow:
-        0 16px 35px rgba(0,0,0,.30);
+        inset 0 1px 0 rgba(255,255,255,.45),
+        0 18px 40px rgba(0,0,0,.20);
 
 }
 
