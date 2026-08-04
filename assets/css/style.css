@@ -1614,7 +1614,11 @@ SERVIÇOS
 
 .services{
 
-    background:#080808;
+    background:linear-gradient(
+        180deg,
+        #F7F4EE 0%,
+        #F1EBE2 100%
+    );
 
 }
 
@@ -1629,6 +1633,7 @@ SERVIÇOS
     margin-top:70px;
 
 }
+
 /*==================================================
 SERVICE CARD
 ==================================================*/
@@ -1639,11 +1644,14 @@ SERVICE CARD
 
     padding:45px 35px;
 
-    background:linear-gradient(180deg,#161616,#0E0E0E);
+    background:#FDFBF8;
 
-    border:1px solid rgba(200,165,106,.12);
+    border:1px solid rgba(191,160,102,.18);
 
     border-radius:24px;
+
+    box-shadow:
+        0 12px 35px rgba(90,70,35,.08);
 
     transition:.45s ease;
 
@@ -1653,11 +1661,11 @@ SERVICE CARD
 
 .service-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-8px);
 
-    border-color:rgba(200,165,106,.35);
-
-    box-shadow:0 25px 60px rgba(0,0,0,.40);
+    box-shadow:
+        0 20px 45px rgba(90,70,35,.16),
+        0 0 25px rgba(201,166,107,.12);
 
 }
 
@@ -1667,13 +1675,18 @@ SERVICE CARD
 
 .service-icon{
 
-    font-size:46px;
+    width:60px;
+    height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:38px;
 
     color:var(--gold);
 
     margin-bottom:28px;
-
-    transition:.35s ease;
 
 }
 
@@ -1685,19 +1698,17 @@ SERVICE CARD
 
 .service-card h3{
 
-    font-family:'Cormorant Garamond',serif;
+    color:#2F2A24;
 
-    font-size:34px;
-
-    font-weight:600;
-
-    margin-bottom:20px;
+    text-shadow:
+        0 1px 0 rgba(255,255,255,.70),
+        0 0 10px rgba(201,166,107,.12);
 
 }
 
 .service-card p{
 
-    color:#C8C8C8;
+    color:#6F685F;
 
     line-height:1.9;
 
@@ -1771,7 +1782,7 @@ BRILHO
 
         transparent,
 
-        rgba(255,255,255,.08),
+        rgba(191,160,102,.06),
 
         transparent
 
@@ -1806,7 +1817,7 @@ MARCAS
 
 .brands{
 
-    background:#050505;
+    background: var(--color-bg);
 
 }
 
