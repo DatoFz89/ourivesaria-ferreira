@@ -846,6 +846,81 @@ CTA
 }
 
 
+/*==================================================
+RELOJOARIA
+==================================================*/
+
+.watch-categories .categories-grid {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.watch-categories .category-card {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+
+.watch-categories .category-card img {
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+}
+
+
+/* ESCONDER CONTEÚDO ORIGINAL DO TEMPLATE */
+.watch-categories .category-card .category-content {
+
+    display: none !important;
+
+}
+
+
+/* TEXTO SOBRE A IMAGEM */
+.watch-categories .category-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 40px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0)
+    );
+
+}
+
+
+.watch-categories .category-overlay h3 {
+
+    margin: 0;
+
+    font-size: 2.5rem;
+
+    color: #fff;
+
+}
 
 /*==================================================
 RESPONSIVO
