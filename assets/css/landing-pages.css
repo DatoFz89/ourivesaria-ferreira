@@ -1086,3 +1086,65 @@ RESPONSIVO
 
 }
 
+.watch-categories{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.watch-categories .container{
+    padding-bottom: 0 !important;
+}
+.watch-categories .categories-grid{
+    gap: 0 !important;
+    margin-bottom: 0 !important;
+}
+.watch-categories .category-card{
+    aspect-ratio: 3 / 1 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+.watch-categories .category-card::before{
+    display: none !important;
+}
+.watch-categories .category-card img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 35% !important;
+    display: block !important;
+}
+
+.watch-categories .categories-grid{
+    padding: 0 40px !important;
+}
+.watch-categories .category-card{
+    aspect-ratio: 2.8 / 1 !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+    overflow: hidden !important;
+    border-radius: 26px !important;
+}
+.watch-categories .category-card::before{
+    display: none !important;
+}
+.watch-categories .category-card img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* TIRA SÓ A MARGEM DE BAIXO */
+section.watch-categories{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+section.watch-categories + section,
+#categorias + section{
+    padding-top: 60px !important;
+    margin-top: 0 !important;
+}
+
