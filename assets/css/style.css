@@ -161,22 +161,15 @@ TITLES
 
     display:inline-block;
 
-    color:#C9A66B;
+    color:#B88A47;
 
     font-size:14px;
-
-    font-weight:700;
 
     letter-spacing:5px;
 
     text-transform:uppercase;
 
     margin-bottom:18px;
-
-    text-shadow:
-        0 1px 0 rgba(255,255,255,.95),
-        0 1px 2px rgba(158,122,70,.18),
-        0 0 8px rgba(201,166,107,.20);
 
 }
 
@@ -1452,7 +1445,7 @@ OFICINA
 
     transform:scale(1.08);
 
-    opacity:.45;
+    opacity:.75;
 
 }
 
@@ -1471,6 +1464,14 @@ OFICINA
     );
 
     z-index:2;
+
+}
+
+.atelier .container{
+
+    position:relative;
+
+    z-index:3;
 
 }
 
@@ -1498,19 +1499,28 @@ CONTENT
 
     margin:30px 0;
 
-    color:#2F2A24;
+    color:#FFFFFF;
 
 }
 
 .atelier-content p{
 
-    color:#5F5A53;
+    color:rgba(255,255,255,.90);
 
     font-size:19px;
 
     line-height:2;
 
     margin-bottom:45px;
+
+}
+
+.atelier .section-tag{
+
+    color:#E2C48A;
+
+    text-shadow:
+        0 0 4px rgba(226,196,138,.15);
 
 }
 
