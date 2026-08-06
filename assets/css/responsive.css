@@ -280,6 +280,11 @@ RESPONSIVE
         padding:40px 0;
     }
 
+    .brands{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
     .cta-box{
         padding:60px 35px;
     }
