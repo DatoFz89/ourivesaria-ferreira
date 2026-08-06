@@ -408,7 +408,7 @@ function initWhatsAppForm() {
 ${mensagem}`;
 
         // ALTERAR PELO NÚMERO DO WHATSAPP DA OURIVESARIA
-        const numero = "351919657978";
+        const numero = "351938066695";
 
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
