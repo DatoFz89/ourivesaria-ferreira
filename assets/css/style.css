@@ -73,6 +73,8 @@ ROOT
 
 :root{
 
+    color-scheme: light;
+
     --gold:#C9A66B;
     --gold-light:#E4C995;
     --gold-dark:#9E7A46;
@@ -2275,6 +2277,8 @@ FORMULÁRIO
 
 .contact-form input,
 .contact-form textarea{
+
+    color-scheme: light;
 
     width:100%;
 
