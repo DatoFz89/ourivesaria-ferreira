@@ -139,6 +139,11 @@ RESPONSIVE
         font-size:58px;
     }
 
+    .history-mobile-tag{
+        display:block;
+        margin-bottom:20px;
+    }
+
     .atelier-content h2{
         font-size:60px;
     }
@@ -178,6 +183,11 @@ RESPONSIVE
     .hero{
         text-align:center;
         padding-top:160px;
+    }
+
+    .history-mobile-tag{
+        display:block;
+        margin-bottom:20px;
     }
 
     .hero-left{

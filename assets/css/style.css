@@ -175,6 +175,12 @@ TITLES
 
 }
 
+.history-mobile-tag{
+
+    display:none;
+
+}
+
 .section-header{
 
     max-width:900px;
