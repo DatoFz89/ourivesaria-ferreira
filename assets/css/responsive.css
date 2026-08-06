@@ -285,6 +285,14 @@ RESPONSIVE
         padding-bottom:60px;
     }
 
+    .history{
+        padding:60px 0;
+    }
+
+    .articles{
+        padding:60px 0;
+    }
+
     .cta-box{
         padding:60px 35px;
     }
