@@ -956,52 +956,57 @@ CONTACTOS
 
         <div class="contact-form">
 
-            <form>
+    <form id="contactForm">
 
-                <input
-                    type="text"
-                    placeholder="Nome"
-                    required
-                >
+        <input
+            id="nome"
+            type="text"
+            placeholder="Nome"
+            required
+        >
 
-                <input
-                    type="email"
-                    placeholder="Email"
-                    required
-                >
+        <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+        >
 
-                <input
-                    type="tel"
-                    placeholder="Telefone"
-                >
+        <input
+            id="telefone"
+            type="tel"
+            placeholder="Telefone"
+        >
 
-                <input
-                    type="text"
-                    placeholder="Assunto"
-                >
+        <input
+            id="assunto"
+            type="text"
+            placeholder="Assunto"
+        >
 
-                <textarea
-                    rows="7"
-                    placeholder="Escreva a sua mensagem..."
-                    required
-                ></textarea>
+        <textarea
+            id="mensagem"
+            rows="7"
+            placeholder="Escreva a sua mensagem..."
+            required
+        ></textarea>
 
-                <button
-                    type="submit"
-                    class="btn-gold"
-                >
+        <p class="whatsapp-note">
+            Ao clicar em <strong>Enviar por WhatsApp</strong>, será aberta uma conversa com a Ourivesaria Ferreira. A sua mensagem será preenchida automaticamente. Basta tocar em <strong>Enviar</strong> no WhatsApp.
+        </p>
 
-                    Enviar Mensagem
+        <button
+            type="submit"
+            class="btn-gold"
+        >
 
-                </button>
+            Enviar por WhatsApp
 
-            </form>
+        </button>
 
-        </div>
+    </form>
 
-    </div>
-
-</section>
+</div>
 	
 	
 <!-- ===========================================

@@ -377,6 +377,49 @@ function updateYear() {
 }
 
 /*==================================================
+WHATSAPP FORM
+==================================================*/
+
+function initWhatsAppForm() {
+
+    const form = document.getElementById("contactForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const nome = document.getElementById("nome").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const telefone = document.getElementById("telefone").value.trim();
+        const assunto = document.getElementById("assunto").value.trim();
+        const mensagem = document.getElementById("mensagem").value.trim();
+
+        const texto =
+`Olá! Recebeu um novo contacto através do site da Ourivesaria Ferreira.
+
+👤 Nome: ${nome}
+📧 Email: ${email}
+📞 Telefone: ${telefone}
+📝 Assunto: ${assunto}
+
+💬 Mensagem:
+${mensagem}`;
+
+        // ALTERAR PELO NÚMERO DO WHATSAPP DA OURIVESARIA
+        const numero = "351919657978";
+
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+}
+
+
+/*==================================================
 INITIALIZATION
 ==================================================*/
 
@@ -392,6 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initActiveMenu();
     initGallery();
     initRipple();
+    initWhatsAppForm();
 
 });
 
