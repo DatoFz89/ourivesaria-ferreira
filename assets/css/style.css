@@ -2890,37 +2890,41 @@ RESPONSIVE - MOBILE
 
     .hero-video img{
 
-    object-fit:contain;
-
-    object-position:top center;
-
-    transform:none;
+        object-fit:contain;
+        object-position:top center;
+        transform:none;
 
     }
 
     .hero-light{
 
-    background:
-    radial-gradient(circle at 75% 30%,rgba(201,166,107,.18),transparent 35%),
-    rgba(5,5,5,.15);
+        background:
+        radial-gradient(circle at 75% 30%,rgba(201,166,107,.18),transparent 35%),
+        rgba(5,5,5,.15);
 
     }
 
     .hero h2{
+
         font-size:54px;
+
+        text-shadow:
+            0 3px 8px rgba(0,0,0,.45),
+            0 10px 24px rgba(0,0,0,.25);
+
     }
 
     .hero p{
 
-    font-size:20px;
+        font-size:20px;
 
-    line-height:1.8;
+        line-height:1.8;
 
-    color:#F5F5F5;
+        color:#FFFFFF;
 
-    text-shadow:
-        0 4px 10px rgba(0,0,0,.98),
-        0 0 22px rgba(0,0,0,.70);
+        text-shadow:
+            0 2px 8px rgba(0,0,0,.40),
+            0 0 14px rgba(0,0,0,.20);
 
     }
 
