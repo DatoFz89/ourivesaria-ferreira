@@ -407,10 +407,7 @@ function initWhatsAppForm() {
 💬 Mensagem:
 ${mensagem}
 
-👉 Clique em Enviar para confirmar o envio desta mensagem.`;
 
-
-        
 
 
         // ALTERAR PELO NÚMERO DO WHATSAPP DA OURIVESARIA
