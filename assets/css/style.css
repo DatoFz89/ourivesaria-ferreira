@@ -2095,9 +2095,9 @@ CONTACTOS
 
     display:grid;
 
-    grid-template-columns:1.05fr .95fr;
+    grid-template-columns:.85fr 1.15fr;
 
-    gap:120px;
+    gap:80px;
 
     align-items:start;
 
@@ -2139,7 +2139,7 @@ INFORMAÇÕES
 
     flex-direction:column;
 
-    gap:30px;
+    gap:25px;
 
 }
 
@@ -2149,9 +2149,9 @@ INFORMAÇÕES
 
     align-items:flex-start;
 
-    gap:25px;
+    gap:22px;
 
-    padding:32px;
+    padding:26px;
 
     border-radius:22px;
 
@@ -2177,9 +2177,9 @@ INFORMAÇÕES
 
 .contact-icon{
 
-    width:70px;
+    width:60px;
 
-    height:70px;
+    height:60px;
 
     display:flex;
 
@@ -2195,7 +2195,7 @@ INFORMAÇÕES
 
     color:var(--gold);
 
-    font-size:28px;
+    font-size:24px;
 
     flex-shrink:0;
 
@@ -2239,6 +2239,7 @@ INFORMAÇÕES
 
 }
 
+
 /*==================================================
 FORMULÁRIO
 ==================================================*/
@@ -2259,6 +2260,7 @@ FORMULÁRIO
 
 }
 
+
 .contact-form form{
 
     display:flex;
@@ -2268,6 +2270,7 @@ FORMULÁRIO
     gap:22px;
 
 }
+
 
 .contact-form input,
 .contact-form textarea{
@@ -2290,12 +2293,14 @@ FORMULÁRIO
 
 }
 
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder{
 
     color:#9b958f;
 
 }
+
 
 .contact-form textarea{
 
@@ -2304,6 +2309,7 @@ FORMULÁRIO
     min-height:180px;
 
 }
+
 
 .contact-form input:focus,
 .contact-form textarea:focus{
@@ -2315,6 +2321,7 @@ FORMULÁRIO
     outline:none;
 
 }
+
 
 .contact-form button{
 
