@@ -405,7 +405,13 @@ function initWhatsAppForm() {
 📝 Assunto: ${assunto}
 
 💬 Mensagem:
-${mensagem}`;
+${mensagem}
+
+👉 Clique em Enviar para confirmar o envio desta mensagem.`;
+
+
+        
+
 
         // ALTERAR PELO NÚMERO DO WHATSAPP DA OURIVESARIA
         const numero = "351938066695";
