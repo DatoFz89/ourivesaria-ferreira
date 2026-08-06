@@ -2254,12 +2254,13 @@ FORMULÁRIO
 
     border:1px solid rgba(212,175,55,.12);
 
+    margin-top:280px;
+
     box-shadow:
         0 20px 60px rgba(0,0,0,.08),
         0 4px 12px rgba(0,0,0,.04);
 
 }
-
 
 .contact-form form{
 
