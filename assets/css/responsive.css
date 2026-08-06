@@ -293,6 +293,11 @@ RESPONSIVE
         padding:40px 0;
     }
 
+    .atelier{
+        min-height:auto;
+        padding:60px 0;
+    }
+
     .cta-box{
         padding:60px 35px;
     }
