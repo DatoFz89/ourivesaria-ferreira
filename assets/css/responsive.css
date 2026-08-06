@@ -193,6 +193,10 @@ RESPONSIVE
         margin-bottom:20px;
     }
 
+    .history-content::before{
+        display:none;
+    }
+
     .hero-left{
         margin:auto;
     }
