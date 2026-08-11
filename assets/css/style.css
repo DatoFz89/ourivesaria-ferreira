@@ -417,7 +417,7 @@ LOGO
 
 }
 
-.logo h1{
+.logo-title{
 
     font-family:'Cormorant Garamond',serif;
 
@@ -2909,7 +2909,7 @@ RESPONSIVE - MOBILE
         letter-spacing:4px;
     }
 
-    .logo h1{
+    .logo-title{
         font-size:36px;
     }
 
