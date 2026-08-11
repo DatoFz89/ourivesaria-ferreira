@@ -73,6 +73,12 @@
     max-width: 700px;
 }
 
+.hero-gold .section-tag,
+.hero-silver .section-tag,
+.hero-watches .section-tag {
+    margin-top: 50px;
+}
+
 .hero-left h2 {
     margin: 25px 0;
     font-family: 'Cormorant Garamond', serif;
