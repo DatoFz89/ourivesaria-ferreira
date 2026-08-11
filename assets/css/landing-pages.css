@@ -378,6 +378,12 @@ CATEGORIAS
 
 }
 
+.gold-categories .section-header h2{
+
+    color:#F5F0E6;
+
+}
+
 .categories-grid{
 
     display:grid;
