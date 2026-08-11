@@ -744,7 +744,7 @@ HERO
 
 }
 
-.hero h2{
+.hero h1{
 
     font-family:'Cormorant Garamond',serif;
 
@@ -2952,7 +2952,7 @@ RESPONSIVE - MOBILE
 
     }
 
-    .hero h2{
+    .hero h1{
 
         font-size:54px;
 
@@ -3045,7 +3045,7 @@ RESPONSIVE - SMALL MOBILE
 
     }
 
-    .hero h2{
+    .hero h1{
 
         font-size:42px;
 
