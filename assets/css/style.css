@@ -4,6 +4,27 @@ STYLE.CSS
 ==================================================*/
 
 /*=========================
+FONTS (self-hosted)
+=========================*/
+
+@font-face{
+    font-family:'Cormorant Garamond';
+    src:url('../fonts/CormorantGaramond-Variable.woff2') format('woff2-variations');
+    font-weight:300 700;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face{
+    font-family:'Montserrat';
+    src:url('../fonts/Montserrat-Variable.woff2') format('woff2-variations');
+    font-weight:300 700;
+    font-style:normal;
+    font-display:swap;
+}
+
+
+/*=========================
 RESET
 =========================*/
 
